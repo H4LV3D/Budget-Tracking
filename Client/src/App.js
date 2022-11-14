@@ -1,17 +1,19 @@
 import React from "react";
 import "./Styles/index.css";
-import { Router, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-// import About from "./Pages/About";
+import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./Pages/Home.js";
+import About from "./Pages/About";
 import Login from "./Pages/Login";
 
 function App() {
   return (
     <>
       <Router>
-        <Route path="/" exact component={Home} />
-        {/* <Route path="/about" exact component={About} /> */}
-        <Route path="/login" exact component={Login} />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
       </Router>
     </>
   );

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     screens: {
       sm: "480px",
@@ -10,16 +11,15 @@ module.exports = {
     },
     colors: {
       blue: "#5992C7",
-      pink: "#ff49db",
-      orange: "#ff7849",
+      red: "#F56565",
       green: "#13ce66",
       "gray-dark": "#273444",
       gray: "#8492a6",
       "gray-light": "#d3dce6",
     },
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      raleway: ["Raleway", "sans-serif"],
+      archivo: ["Archivo", "sans-serifs"],
     },
     extend: {
       spacing: {
@@ -35,6 +35,5 @@ module.exports = {
       },
     },
   },
-  darkMode: "class",
   plugins: [],
 };

@@ -7,20 +7,20 @@ function Home() {
   return (
     <>
       <div className="h-screen w-full dark:bg-blue">
-        <Navbar darkToggle={darkToggle} setDarkToggle={setDarkToggle} />
+        <Navbar darkToggle={darkToggle} />
         <div
           className={`flex items-center justify-center bg-gray-300 flex-col ${
             darkToggle && "dark"
           }`}
         >
-          <div className="max-w-sm rounded overflow-hidden bg-gray-100 p-5 mt-4 text-white dark:bg-red-900">
+          <div className="max-w-sm rounded overflow-hidden bg-gray-100 p-5 mt-4 text-white dark:bg-red-900 font-raleway">
             <img
               className="w-full"
               src="https://v1.tailwindcss.com/img/card-top.jpg"
               alt="Sunset in the mountains"
             />
             <div className="px-6 py-4">
-              <div className="text-gray-800 dark:text-red-200 font-bold text-xl mb-2">
+              <div className="text-gray-800 dark:text-blue-200 font-bold text-xl mb-2 font-archivo">
                 The Coldest Sunset
               </div>
               <p className="text-gray-800 dark:text-gray-200">

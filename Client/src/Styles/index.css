@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Archivo";
-  src: url("../Assets/Archivo/Archivo-VariableFont_wdth\,wght.ttf");
+  font-family: "Montserrat";
+  src: url("../Assets/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "Raleway";

@@ -9,18 +9,19 @@ function Home() {
       <div className="h-screen w-full dark:bg-blue">
         <Navbar darkToggle={darkToggle} />
         <div
-          className={`flex items-center justify-center bg-gray-300 flex-col ${
+          className={`flex items-center justify-center flex-col ${
             darkToggle && "dark"
           }`}
         >
-          <div className="max-w-sm rounded overflow-hidden bg-gray-100 p-5 mt-4 text-white dark:bg-red-900 font-raleway">
+          <div className="max-w-sm rounded overflow-hidden bg-gray-100 dark:bg-gray-800 mt-5 dark:bg-red-900 font-raleway dark:text-blue-600 shadow-lg">
             <img
               className="w-full"
               src="https://v1.tailwindcss.com/img/card-top.jpg"
               alt="Sunset in the mountains"
+              width="9em"
             />
-            <div className="px-6 py-4">
-              <div className="text-gray-800 dark:text-blue-200 font-bold text-xl mb-2 font-archivo">
+            <div className="px-6 p-5">
+              <div className="text-gray-800 dark:text-blue-200 font-bold text-xl mb-2 font-montserrat">
                 The Coldest Sunset
               </div>
               <p className="text-gray-800 dark:text-gray-200">
@@ -29,8 +30,8 @@ function Home() {
                 exercitationem praesentium nihil.
               </p>
             </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+            <div className="px-6 py-4">
+              <span className="inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-gray-700  mr-2 mb-2">
                 #photography
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">

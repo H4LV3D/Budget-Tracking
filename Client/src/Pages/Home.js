@@ -6,14 +6,14 @@ function Home() {
 
   return (
     <>
-      <div className="h-screen w-full dark:bg-blue">
+      <div className="h-screen w-full dark:bg-gray-800">
         <Navbar darkToggle={darkToggle} />
         <div
           className={`flex items-center justify-center flex-col ${
             darkToggle && "dark"
           }`}
         >
-          <div className="max-w-sm rounded overflow-hidden bg-gray-100 dark:bg-gray-800 mt-5 dark:bg-red-900 font-raleway dark:text-blue-600 shadow-lg">
+          <div className="max-w-sm rounded overflow-hidden bg-gray-100 dark:bg-gray-700 mt-5 dark:bg-red-900 font-raleway dark:text-blue-600 shadow-lg">
             <img
               className="w-full"
               src="https://v1.tailwindcss.com/img/card-top.jpg"

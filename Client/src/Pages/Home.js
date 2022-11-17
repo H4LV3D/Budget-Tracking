@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../Components/Navbar";
 
 function Home() {
-  const [darkToggle, setDarkToggle] = useState(false);
+  const darkToggle = false;
 
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
 import Toggle from "./toggle";
-import logo from "../Assets/Logo.png";
+// import logo from "../Assets/Logo.png";
 
 const Navbar = () => {
   return (

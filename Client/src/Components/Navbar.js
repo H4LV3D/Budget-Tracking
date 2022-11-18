@@ -64,8 +64,9 @@ const Navbar = () => {
                 type="button"
                 class="inline-flex w-full justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 active:outline-none active:bg-gray-100 transition ease-in-out duration-150"
                 id="menu-button"
-                aria-expanded="true"
-                aria-haspopup="true"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                data-dropdown-toggle="dropdown"
               >
                 <p className="px-5">
                   <span className="px-5">Options</span>
@@ -88,6 +89,7 @@ const Navbar = () => {
             <div
               class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white dark:bg-blueDeep shadow-lg ring-1 ring-black dark:ring-blueDeep ring-opacity-5 focus:outline-none"
               role="menu"
+              id="dropdown"
               aria-orientation="vertical"
               aria-labelledby="menu-button"
               tabindex="-1"

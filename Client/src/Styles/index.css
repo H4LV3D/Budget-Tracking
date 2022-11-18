@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../Assets/Montserrat/Montserrat-VariableFont_wght.ttf");
+  font-family: "roboto";
+  src: url("../Assets/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "Raleway";

@@ -59,7 +59,7 @@ module.exports = {
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],
       archivo: ["Archivo", "sans-serif"],
-      montserrat: ["Montserrat", "sans-serif"],
+      roboto: ["roboto", "sans-serif"],
       merriweather: ["merriweather", "sans-serif"],
     },
     extend: {

@@ -15,14 +15,18 @@ function Home() {
         >
           <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen">
             <div className="container mx-auto px-6 py-20">
-              <h2 className="text-8xl font-merriweather font-black text-blueDeep dark:text-white mb-8">
-                Follow The Trace
+              <h2 className="text-8xl text-center font-raleway font-black text-blueDeep dark:text-white mb-8">
+                Follow <br /> the Money!
               </h2>
-              <p className="font-raleway font-medium text-lg">
+              <p className="font-raleway text-center font-medium text-lg">
                 Save. Spend. Invest. Repeat.
               </p>
-              <p></p>
-              <div className="flex flex-wrap -mx-6">
+              <p className="text-grat-800 dark:text-green-200 font-raleway text-md ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                quaerat cumque unde hic porro dolores veritatis quos, doloribus
+                soluta nisi ea
+              </p>
+              <div className="hidden flex flex-wrap -mx-6">
                 <div className="w-full md:w-1/2 xl:w-1/3 px-6 py-3">
                   <div className="bg-white rounded shadow py-2">
                     <a

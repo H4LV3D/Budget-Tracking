@@ -1,8 +1,5 @@
 import React from "react";
 import Toggle from "./toggle";
-// import logo from "../Assets/Logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -10,7 +7,7 @@ const Navbar = () => {
       <div className="flex lg:container flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row justify-between shadow-xl border-r-5">
         <div className="flex">
           <a href="/" className="flex items-center mb-4 md:mb-0">
-            <FontAwesomeIcon icon={faEnvelope} />
+            <i class="fab fa-bitcoin fa-lg fa-fw text-blueDeep"></i>
             <span className="text-blueDeep font-montserrat font-black text-lg">
               Coin
             </span>

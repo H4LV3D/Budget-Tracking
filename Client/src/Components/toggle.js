@@ -31,7 +31,7 @@ const Toggle = () => {
           type="checkbox"
           id="checkbox"
           className="dark:bg-gray-300"
-          checked={theme === "dark"}
+          defaultChecked={theme === "dark"}
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         />
         <span className="slideBtnTg round"></span>

@@ -58,7 +58,9 @@ module.exports = {
     },
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],
+      archivo: ["Archivo", "sans-serif"],
       montserrat: ["Montserrat", "sans-serif"],
+      merriweather: ["merriweather", "sans-serif"],
     },
     extend: {
       spacing: {

@@ -3,8 +3,8 @@ import Toggle from "./toggle";
 
 const Navbar = () => {
   return (
-    <header className="text-gray-700 bg-white dark:bg-gray-800 body-font ">
-      <div className="flex lg:container flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row justify-between shadow-xl border-r-5">
+    <header className="text-gray-700 bg-white dark:bg-gray-800">
+      <div className="flex lg:container flex-col flex-wrap px-5 py-3 mx-auto md:items-center md:flex-row justify-between shadow-xl border-r-5">
         <div className="flex">
           <a href="/" className="flex items-center mb-4 md:mb-0">
             <i class="fab fa-bitcoin fa-lg fa-fw text-blueDeep"></i>

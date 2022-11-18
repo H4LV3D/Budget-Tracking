@@ -10,6 +10,14 @@
   font-family: "Raleway";
   src: url("../Assets/Raleway/Raleway-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "Archivo";
+  src: url("../Assets/Archivo/Archivo-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: "merriweather";
+  src: url("../Assets/Merriweather/Merriweather-Bold.ttf");
+}
 
 /* Path: Client/src/Styles/Styles.css */
 

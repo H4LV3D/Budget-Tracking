@@ -6,27 +6,37 @@ function Home() {
 
   return (
     <>
-      <div className="h-screen w-full dark:bg-gray-800">
+      <header class="absolute w-full top-0 z-50">
         <Navbar darkToggle={darkToggle} />
+      </header>
+      <div className="h-screen w-full dark:bg-gray-800">
         <div
           className={`flex items-center justify-center flex-col ${
             darkToggle && "dark"
           }`}
         >
-          <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen">
-            <div className="container mx-auto px-6 py-20">
-              <h2 className="text-8xl text-center font-raleway font-black text-blueDeep dark:text-white mb-8">
-                Follow <br /> the Money!
+          <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center">
+            <div className="container mx-auto px-6 py-20 flex flex-col items-center justify-center">
+              <h2 className="text-8xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
+                Follow <br /> <span className="text-blueDeep">The</span> Money!
               </h2>
-              <p className="font-raleway text-center font-medium text-lg">
+              <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200">
                 Save. Spend. Invest. Repeat.
               </p>
-              <p className="text-grat-800 dark:text-green-200 font-raleway text-md ">
+              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base text-center mx-auto w-2/4 md:w-3/4 my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
-                soluta nisi ea
+                soluta nisi ea unde hic porro dolores veritatis.
               </p>
-              <div className="hidden flex flex-wrap -mx-6">
+              <div className="flex">
+                <button className="bg-blueDeep text-center py-3 px-10 mr-3 text-white text-lg rounded-lg">
+                  Budget Now
+                </button>
+                <button className="border border-blueDeep text-blueDeep text-center py-3 px-10 text-lg rounded-lg">
+                  Start Tracking
+                </button>
+              </div>
+              <div className="hidden xl:flex flex-wrap -mx-6">
                 <div className="w-full md:w-1/2 xl:w-1/3 px-6 py-3">
                   <div className="bg-white rounded shadow py-2">
                     <a

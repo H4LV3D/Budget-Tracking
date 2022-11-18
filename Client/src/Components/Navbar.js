@@ -3,19 +3,19 @@ import Toggle from "./toggle";
 
 const Navbar = () => {
   return (
-    <header className="text-gray-700 bg-white dark:bg-gray-800">
-      <div className="flex lg:container flex-col flex-wrap px-5 py-3 mx-auto md:items-center md:flex-row justify-between shadow-xl border-r-5">
+    <header className="text-gray-700 dark:bg-gray-800 dark:shadow-gray-600">
+      <div className="flex flex-col flex-wrap px-5 md:px-12 py-5 mx-auto md:items-center md:flex-row justify-between shadow-md lg:shadow-xl lg:rounded-xl lg:my-3 lg:mx-10">
         <div className="flex">
-          <a href="/" className="flex items-center mb-4 md:mb-0">
+          <a href="/" className="flex items-center mb-4 md:mb-0 mr-3">
             <i class="fab fa-bitcoin fa-lg fa-fw text-blueDeep"></i>
-            <span className="text-blueDeep font-montserrat font-black text-lg">
+            <span className="text-blueDeep font-sans font-bold text-lg">
               Coin
             </span>
-            <span className="text-gray-600 font-raleway font-black text-lg">
+            <span className="text-gray-600 dark:text-gray-400 font-raleway font-black text-lg">
               Save
             </span>
           </a>
-          <nav className="md:hidden flex flex-wrap items-center justify-center ml-4 text-base font-raleway">
+          <nav className="hidden md:flex flex-wrap items-center justify-center ml-4 font-raleway">
             <a
               href="/"
               className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-gray-800"
@@ -42,7 +42,7 @@ const Navbar = () => {
             </a>
           </nav>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="md:hidden flex items-center justify-center">
           <div className="relative inline-block text-left">
             <div>
               <button
@@ -123,19 +123,19 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="flex flex-nowrap">
           <Toggle />
-          <div className="md:hidden">
-            <nav className="hidden md:flex flex-wrap items-center justify-center text-base font-raleway">
+          <div className="hidden lg:block ml-6">
+            <nav className=" md:flex flex-wrap items-center justify-center text-base font-raleway">
               <a
-                href="/"
-                className="mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-gray-800"
+                href="/login"
+                className="mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black"
               >
                 Sign In
               </a>
               <a
                 href="/"
-                className="mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-gray-800"
+                className="mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep"
               >
                 Register
               </a>
@@ -154,6 +154,9 @@ const Navbar = () => {
                 />
               </svg>
             </button>
+          </div>
+          <div className="lg:hidden">
+            <i class="fas fa-user-circle fa-fw fa-xl" aria-hidden="true"></i>
           </div>
         </div>
       </div>

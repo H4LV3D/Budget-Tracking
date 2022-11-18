@@ -24,8 +24,8 @@
 .toggleDarkBtn {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 30px;
+  width: 44px;
+  height: 24px;
 }
 .toggleDarkBtn input {
   opacity: 0;
@@ -46,8 +46,8 @@
 .slideBtnTg:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   left: 5px;
   bottom: 5px;
   -webkit-transition: 0.5s;
@@ -55,7 +55,7 @@
   background-color: white;
 }
 input:checked + .slideBtnTg {
-  background-color: #1d1e1f;
+  background-color: #5992c7;
 }
 input:focus + .slideBtnTg {
   box-shadow: 0 0 1px #2196f3;

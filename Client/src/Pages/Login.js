@@ -39,7 +39,7 @@ function Login() {
                     <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                   </svg>
                 </div>
-                <button class="bg-blue text-[#fff] rounded-md text-white py-2 hover:scale-105 duration-300">
+                <button class="bg-blue text-white rounded-md  py-2 hover:scale-105 duration-300">
                   Login
                 </button>
               </form>

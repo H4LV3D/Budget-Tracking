@@ -2,7 +2,7 @@ import React from "react";
 import Toggle from "./toggle";
 
 const Navbar = () => {
-  var menu = document.getElementById("menu");
+
   function openMenu() {
     var menu = document.getElementById("menu");
     menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");

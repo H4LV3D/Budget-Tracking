@@ -2,7 +2,6 @@ import React from "react";
 import Toggle from "./toggle";
 
 const Navbar = () => {
-
   function openMenu() {
     var menu = document.getElementById("menu");
     menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
@@ -17,7 +16,7 @@ const Navbar = () => {
 
   return (
     <header className="text-gray-700 dark:bg-gray-800 dark:shadow-gray-600">
-      <div className="flex flex-row flex-wrap px-8 md:px-12 py-5 mx-auto md:items-center justify-between shadow-md lg:shadow-xl lg:rounded-xl lg:my-3 lg:mx-10">
+      <div className="flex flex-row flex-wrap px-3 sm:px-8 md:px-12 py-5 mx-auto md:items-center justify-between shadow-md lg:shadow-xl lg:rounded-xl lg:my-3 lg:mx-10">
         <div className="flex">
           <a href="/" className="flex items-center md:mb-0 mr-3">
             <i className="fab fa-bitcoin fa-lg fa-fw text-blueDeep"></i>
@@ -31,25 +30,25 @@ const Navbar = () => {
           <nav className="hidden md:flex flex-wrap items-center justify-center ml-4 font-raleway">
             <a
               href="/"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-gray-800 hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
+              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
             >
               Dashboard
             </a>
             <a
               href="/"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-gray-800 hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
+              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
             >
               Projects
             </a>
             <a
               href="/"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-gray-800 hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
+              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
             >
               Setting
             </a>
             <a
               href="/"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-gray-800 hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
+              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
             >
               Account
             </a>
@@ -73,13 +72,13 @@ const Navbar = () => {
             <nav className=" md:flex flex-wrap items-center justify-center text-base font-raleway">
               <a
                 href="/login"
-                className="mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black"
+                className="mr-3 md:mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
               >
                 Sign In
               </a>
               <a
                 href="/"
-                className="mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep"
+                className="mr-3 md:mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
               >
                 Register
               </a>

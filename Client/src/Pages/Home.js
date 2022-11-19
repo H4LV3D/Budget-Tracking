@@ -15,7 +15,7 @@ function Home() {
             darkToggle && "dark"
           }`}
         >
-          <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center">
+          <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center my-10 sm:my-0">
             <div className="container mx-auto px-6 py-20 flex flex-col items-center justify-center">
               <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-10xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
                 Follow <br /> <span className="text-blueDeep">The</span> Money!
@@ -29,10 +29,10 @@ function Home() {
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row  w-full px-10 justify-center">
-                <button className="bg-blueDeep text-center py-3 px-10 mr-3 text-white text-lg rounded-lg mb-3">
+                <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[360px]">
                   Budget Now
                 </button>
-                <button className="border border-blueDeep text-blueDeep text-center py-3 px-10 text-lg rounded-lg mb-3">
+                <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[360px]">
                   Start Tracking
                 </button>
               </div>

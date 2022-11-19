@@ -119,37 +119,37 @@ const Navbar = () => {
             ></i>
           </a>
           <a
-            className="hover:text-amber-500 duration-300 my-5 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
+            className="hover:text-amber-500 my-5 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
             About
           </a>
           <a
-            className="hover:text-amber-500 duration-300 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
+            className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
             Projects
           </a>
           <a
-            className="hover:text-amber-500 duration-300 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
+            className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
             Plans
           </a>
           <a
-            className="hover:text-amber-500 duration-300 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
+            className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/login"
           >
             Sign In
           </a>
           <a
-            className="hover:text-amber-500 duration-300 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
+            className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
             Register
           </a>
           <a
-            className="hover:text-amber-500 duration-300 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
+            className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
             <Toggle />

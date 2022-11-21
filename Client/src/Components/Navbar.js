@@ -15,8 +15,8 @@ const Navbar = () => {
   }
 
   return (
-    <header className="text-gray-700 dark:bg-gray-800 dark:shadow-gray-600">
-      <div className="flex flex-row flex-wrap px-3 sm:px-8 md:px-12 py-5 mx-auto md:items-center justify-between shadow-md lg:shadow-xl lg:rounded-xl lg:my-3 lg:mx-10">
+    <header>
+      <div className="flex flex-row flex-wrap px-3 sm:px-8 md:px-12 py-5 mx-auto md:items-center justify-between shadow-md lg:shadow-xl lg:rounded-xl lg:mx-10 text-gray-700 bg-gray-200 dark:bg-gray-800 pt-8">
         <div className="flex">
           <a href="/" className="flex items-center md:mb-0 mr-3">
             <i className="fab fa-bitcoin fa-lg fa-fw text-blueDeep"></i>

@@ -85,3 +85,8 @@ input:checked + .slideBtnTg:before {
 .scrolling-wrapper {
   -webkit-overflow-scrolling: touch;
 }
+
+hr {
+  background-color: #5992c7 !important;
+  height: 2px;
+}

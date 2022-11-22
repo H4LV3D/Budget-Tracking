@@ -99,10 +99,12 @@ const Navbar = () => {
             </button>
           </div>
           <div className="lg:hidden">
-            <i
-              className="fas fa-user-circle fa-fw fa-xl px-5 text-blueDeep"
-              aria-hidden="true"
-            ></i>
+            <a href="/login" className="text-decoration-none">
+              <i
+                className="fas fa-user-circle fa-fw fa-xl px-5 text-blueDeep"
+                aria-hidden="true"
+              ></i>
+            </a>
           </div>
         </div>
       </div>

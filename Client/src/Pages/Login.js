@@ -1,20 +1,28 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
 
 function Login() {
+  const darkToggle = false;
+
   return (
     <>
+      <header className="fixed w-full pt-4 top-0 z-50 text-gray-700">
+        <Navbar darkToggle={darkToggle} />
+      </header>
       <div>
-        <section class="bg-gray-300 min-h-screen flex items-center justify-center">
-          <div class="bg-gray-100 flex rounded-2xl shadow-xl max-w-3xl p-5 items-center">
-            <div class="md:w-1/2 px-8 md:px-16">
-              <h2 class="font-bold text-2xl text-blue">Login</h2>
-              <p class="text-xs mt-4 text-blue">
+        <section class="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center justify-center">
+          <div class="bg-gray-100 dark:bg-gray-700 flex rounded-2xl shadow-xl p-12 items-center w-[800px] font-raleway">
+            <div class="md:w-1/2 px-8 ">
+              <h2 class="font-sans font-black text-blueDeep dark:text-white text-4xl ">
+                Login
+              </h2>
+              <p class="font-raleway text-md mt-4 text-blue">
                 If you are already a member, easily log in
               </p>
 
               <form action="" class="flex flex-col gap-4">
                 <input
-                  class="p-2 mt-8 rounded-md border border-gray-500 focus:outline-none focus:border-blue"
+                  class="py-2 px-4 mt-6 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full bg-gray-100 dark:bg-gray-800 dark:border-0 dark:text-gray-200 active:bg-gray-700"
                   type="email"
                   name="email"
                   placeholder="Email"
@@ -22,7 +30,7 @@ function Login() {
                 />
                 <div class="relative">
                   <input
-                    class="p-2 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full"
+                    class="focus:border-blue py-2 px-4 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full bg-gray-100 dark:bg-gray-800 dark:border-0 dark:text-gray-200 active:bg-gray-700"
                     type="password"
                     name="password"
                     placeholder="Password"
@@ -39,8 +47,8 @@ function Login() {
                     <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                   </svg>
                 </div>
-                <button class="bg-blue text-white rounded-md  py-2 hover:scale-105 duration-300">
-                  Login
+                <button class="mt-4 bg-blueDeep shadow-2xl text-white rounded-lg py-2 hover:scale-105 duration-300">
+                  Submit
                 </button>
               </form>
 
@@ -50,7 +58,7 @@ function Login() {
                 <hr class="border-gray-400" />
               </div>
 
-              <button class="bg-white border py-2 w-full rounded-md mt-5 flex justify-center items-center text-sm hover:scale-105 duration-400 text-blue">
+              <button class="bg-white dark:bg-gray-800 dark:border-gray-900 dark:text-white border py-2 w-full rounded-md mt-5 flex justify-center items-center text-sm hover:scale-105 duration-400 text-blue">
                 <svg
                   class="mr-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,13 +85,13 @@ function Login() {
                 Login with Google
               </button>
 
-              <div class="mt-5 text-xs border-b border-blue py-4 text-blue">
+              <div class="mt-5 text-xs border-b border-blueDeep py-4 text-blue dark:text-gray-400">
                 <a href="/">Forgot your password?</a>
               </div>
 
-              <div class="mt-3 text-xs flex justify-between items-center text-blue">
+              <div class="mt-3 text-xs flex justify-between items-center text-blue dark:text-gray-400">
                 <p>Don't have an account?</p>
-                <button class="py-2 px-5 bg-white border rounded-md hover:scale-110 duration-300">
+                <button class="py-2 px-5 bg-white dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
                   Register
                 </button>
               </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
   }
 
   return (
-    <header>
+    <>
       <div className="flex flex-row flex-wrap px-3 sm:px-8 md:px-12 py-5 mx-auto md:items-center justify-between shadow-md lg:shadow-xl lg:rounded-xl lg:mx-10 text-gray-700 bg-gray-200 dark:bg-gray-800 pt-8">
         <div className="flex">
           <a href="/" className="flex items-center md:mb-0 mr-3">
@@ -158,7 +158,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 

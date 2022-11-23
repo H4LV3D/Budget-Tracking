@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <>
-      <header className="sticky w-full top-0 z-50 text-gray-700 bg-gray-200 dark:bg-gray-800">
+      <header className="fixed w-full pt-4 top-0 z-50 text-gray-700">
         <Navbar darkToggle={darkToggle} />
       </header>
       <div className="h-screen w-full">
@@ -87,7 +87,7 @@ function Home() {
           >
             <div className="flex flex-row px-12 ">
               <div className="px-10">
-                <h1 className="font-sans font-black text-black dark:text-white text-[100px] md:text-[160px] lg:text-[220px] xl:text-[240px]">
+                <h1 className="font-sans font-black text-black dark:text-white text-[100px] md:text-[160px] lg:text-[160px] xl:text-[220px]">
                   WHY <br /> <span className="text-blueDeep">BUDGET?</span>
                 </h1>
               </div>
@@ -233,7 +233,7 @@ function Home() {
             darkToggle && "dark"
           }`}
         >
-          <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex justify-center">
+          <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex justify-center mx-auto">
             <div className="container mx-auto md:px-12 my-auto">
               <div className="flex items-center mb-12">
                 <hr className="w-1/5  bg-gray-800 dark:bg-white" />
@@ -241,7 +241,7 @@ function Home() {
                   What People have to say
                 </p>
               </div>
-              <div className="flex flex-col md:flex-row mx-auto mt-20  p-3 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center xl:w-[1000px] lg:w-[800px] md:[600px]">
+              <div className="flex flex-col md:flex-row xl:mx-auto mt-20  p-3 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center xl:w-[1000px] lg:w-[800px] md:[600px]">
                 <div className="w-full md:w-1/3 p-4">
                   <img src={person} alt="" />
                 </div>

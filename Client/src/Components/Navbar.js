@@ -77,7 +77,7 @@ const Navbar = () => {
                 Sign In
               </a>
               <a
-                href="/"
+                href="/register"
                 className="mr-3 md:mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
               >
                 Register
@@ -108,7 +108,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       <div
         id="menu"
         className="hidden z-90 w-0 h-0 justify-center items-center bg-gray-900 opacity-0 duration-700 font-raleway font-medium text-lg"
@@ -146,16 +145,16 @@ const Navbar = () => {
           </a>
           <a
             className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
-            href="/"
+            href="/register"
           >
             Register
           </a>
-          <a
+          <p
             className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
             <Toggle />
-          </a>
+          </p>
         </div>
       </div>
     </>

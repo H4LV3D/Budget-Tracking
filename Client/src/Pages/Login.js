@@ -16,36 +16,41 @@ function Login() {
               <h2 class="font-sans font-black text-blueDeep dark:text-white text-4xl ">
                 Login
               </h2>
-              <p class="font-raleway text-md mt-4 text-blue">
-                If you are already a member, easily log in
+              <p class="font-raleway text-md dark:text-gray-300 mt-4 text-blue">
+                It's Easy, Login.
               </p>
 
               <form action="" class="flex flex-col gap-4">
-                <input
-                  class="py-2 px-4 mt-6 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full bg-gray-100 dark:bg-gray-800 dark:border-0 dark:text-gray-200 active:bg-gray-700"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  autoFocus
-                />
+                <div className="mt-6 relative">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 pb-1"
+                  >
+                    Email
+                  </label>
+                  <input
+                    class="py-2 px-4 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full bg-gray-100 dark:bg-gray-800 dark:border-0 dark:text-gray-200 active:bg-gray-700"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="mrmoneywiththevibe@gmail.com"
+                    autoFocus
+                  />
+                </div>
                 <div class="relative">
+                  <label
+                    for="password"
+                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 pb-1"
+                  >
+                    Password
+                  </label>
                   <input
                     class="focus:border-blue py-2 px-4 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full bg-gray-100 dark:bg-gray-800 dark:border-0 dark:text-gray-200 active:bg-gray-700"
                     type="password"
                     name="password"
+                    id="password"
                     placeholder="Password"
                   />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="gray"
-                    class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                  </svg>
                 </div>
                 <button class="mt-4 bg-blueDeep shadow-2xl text-white rounded-lg py-2 hover:scale-105 duration-300">
                   Submit
@@ -91,9 +96,11 @@ function Login() {
 
               <div class="mt-3 text-xs flex justify-between items-center text-blue dark:text-gray-400">
                 <p>Don't have an account?</p>
-                <button class="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
-                  Register
-                </button>
+                <a href="/register">
+                  <button class="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
+                    Register
+                  </button>
+                </a>
               </div>
             </div>
 

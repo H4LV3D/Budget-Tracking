@@ -6,7 +6,7 @@ function Register() {
 
   return (
     <>
-      <header className="fixed w-full pt-2 top-0 z-50 text-gray-700">
+      <header className="fixed w-full md:pt-2 top-0 z-50 text-gray-700">
         <Navbar darkToggle={darkToggle} />
       </header>
       <div>

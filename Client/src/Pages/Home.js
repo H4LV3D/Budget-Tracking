@@ -51,7 +51,7 @@ function Home() {
         >
           <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 py-20 flex flex-col items-center justify-center">
-              <h2 className="text-5xl sm:text-7xl md:text-9xl lg:text-10xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
+              <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-10xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
                 Follow <br /> <span className="text-blueDeep">The</span> Money!
               </h2>
               <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200">

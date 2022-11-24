@@ -90,3 +90,27 @@ hr {
   background-color: #5992c7 !important;
   height: 2px;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #e5e7eb inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(34, 30, 30) !important;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1f2937 inset !important;
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+  }
+} */

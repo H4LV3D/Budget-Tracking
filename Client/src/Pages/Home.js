@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <>
-      <header className="fixed w-full pt-4 top-0 z-50 text-gray-700">
+      <header className="fixed w-full pt-2 top-0 z-50 text-gray-700">
         <Navbar darkToggle={darkToggle} />
       </header>
       <div className="h-screen w-full">
@@ -87,7 +87,7 @@ function Home() {
           >
             <div className="flex flex-row px-12 ">
               <div className="px-10">
-                <h1 className="font-sans font-black text-black dark:text-white text-[100px] md:text-[160px] lg:text-[160px] xl:text-[220px]">
+                <h1 className="font-sans font-black text-black dark:text-white text-[100px] md:text-[160px] lg:text-[160px] xl:text-[190px]">
                   WHY <br /> <span className="text-blueDeep">BUDGET?</span>
                 </h1>
               </div>
@@ -260,7 +260,7 @@ function Home() {
               <div className="mx-auto mt-20 flex flex-row items-center justify-center">
                 <a
                   href="/"
-                  class="inline-flex items-center px-6 py-3 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  class="inline-flex items-center px-6 py-3 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 hover:scale-110  dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   <svg
                     aria-hidden="true"
@@ -279,7 +279,7 @@ function Home() {
                 </a>
                 <a
                   href="/"
-                  class="inline-flex items-center px-6 py-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  class="inline-flex items-center px-6 py-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 hover:scale-110 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   Next
                   <svg

@@ -91,7 +91,7 @@ function Login() {
 
               <div class="mt-3 text-xs flex justify-between items-center text-blue dark:text-gray-400">
                 <p>Don't have an account?</p>
-                <button class="py-2 px-5 bg-white dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
+                <button class="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
                   Register
                 </button>
               </div>

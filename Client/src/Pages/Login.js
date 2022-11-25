@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router-dom";
 
 function Login() {
   const darkToggle = false;
@@ -55,8 +56,9 @@ function Login() {
                 <div className="text-xs text-blue dark:text-gray-400">
                   <a href="/">Forgot your password?</a>
                 </div>
-                <button class=" bg-blueDeep shadow-2xl text-white rounded-lg py-2 hover:scale-105 duration-300">
-                  Submit
+
+                <button className=" bg-blueDeep shadow-2xl text-white rounded-lg py-2 hover:scale-105 duration-300">
+                  Login
                 </button>
               </form>
 

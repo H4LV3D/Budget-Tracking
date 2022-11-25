@@ -11,8 +11,8 @@ function Register() {
       </header>
       <div>
         <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center justify-center">
-          <div className="bg-gray-100 dark:bg-gray-700 flex rounded-2xl shadow-xl p-12 w-full items-center lg:w-[900px] font-raleway mx-8 lg:mx-0 my-28 md:my-0">
-            <div className="w-full md:px-8">
+          <div className="bg-gray-100 dark:bg-gray-700 flex rounded-2xl shadow-xl p-8 md:p-12 w-full items-center lg:w-[900px] font-raleway mx-8 sm:mx-14 md:mx-8 lg:mx-0 my-28 md:my-0">
+            <div className="w-full px-0 sm:px-8">
               <h2 className="font-sans font-black text-blueDeep dark:text-white text-4xl">
                 Sign Up.
               </h2>

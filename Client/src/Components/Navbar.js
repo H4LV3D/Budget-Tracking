@@ -29,28 +29,34 @@ const Navbar = () => {
           </a>
           <nav className="hidden md:flex flex-wrap items-center justify-center ml-4 font-raleway">
             <a
+              href="/about"
+              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
+            >
+              About Us
+            </a>
+            <a
+              href="/"
+              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
+            >
+              Budgets
+            </a>
+            <a
+              href="/"
+              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
+            >
+              Tracking
+            </a>
+            <a
+              href="/"
+              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
+            >
+              Download
+            </a>
+            <a
               href="/"
               className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
             >
               Dashboard
-            </a>
-            <a
-              href="/"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
-            >
-              Projects
-            </a>
-            <a
-              href="/"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
-            >
-              Setting
-            </a>
-            <a
-              href="/"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
-            >
-              Account
             </a>
           </nav>
         </div>

@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Dashboard from "./Pages/Dashboard";
 import { ThemeProvider } from "./Components/themeContext";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </Router>
       </ThemeProvider>

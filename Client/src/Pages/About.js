@@ -18,21 +18,25 @@ function About() {
           <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 py-20 flex flex-col ">
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl  font-sans font-black text-blueDeep dark:text-white mb-8">
-                Follow <br /> <span className="text-blueDeep">The</span> Money!
+                About <br /> <span className="text-blueDeep">Coin</span>Save
               </h2>
               <p className="font-raleway font-medium text-xl text-blueDeep dark:text-gray-200">
                 Save. Spend. Invest. Repeat.
               </p>
               <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-2/5 my-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                quaerat cumque unde hic porro dolores veritatis quos, doloribus
-                soluta nisi ea unde hic porro dolores veritatis.
+                We at Coin save linited aim ti help you make better financial
+                and analysis of the inflow and outflow of cash wwithin your
+                wallet and your financiual life and help you better predict your
+                next spending savinga and tracking Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Optio quaerat cumque unde hic
+                porro dolores veritatis quos, doloribus soluta nisi ea unde hic
+                porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row w-full">
-                <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[260px]">
+                <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[260px] hover:scale-110">
                   Budget Now
                 </button>
-                <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[260px] hover:bg-blueDeep hover:text-black">
+                <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[260px] hover:scale-90">
                   Start Tracking
                 </button>
               </div>

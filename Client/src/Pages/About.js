@@ -33,7 +33,7 @@ function About() {
                 porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row w-full">
-                <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[260px] hover:scale-110">
+                <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[260px] hover:scale-75">
                   Budget Now
                 </button>
                 <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[260px] hover:scale-90">
@@ -53,22 +53,24 @@ function About() {
         >
           <section className="bg-gray-300 dark:bg-gray-900 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 py-20 flex flex-col">
-              <h2 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-black text-blueDeep dark:text-white mb-8">
-                Spend Less, <br />
-                <span className="text-blueDeep text-5xl sm:text-7xl md:text-6xl lg:text-9xl">
-                  Save More.
+              <div className="flex items-center mb-4">
+                <hr className="w-1/4  bg-gray-800 dark:bg-white" />
+                <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 pl-4">
+                  Why Save?
+                </p>
+              </div>
+              <h2 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-light text-blueDeep dark:text-white mb-8">
+                <span className="text-blueDeep font-black text-5xl sm:text-7xl md:text-6xl lg:text-8xl">
+                  Control <br />
+                  your Expense
                 </span>
               </h2>
-              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-3/4 lg:w-2/4 leading-7">
+              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-2/5 leading-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
                 soluta nisi ea unde hic porro dolores veritatis soluta nisi ea
                 unde hic porro dolores veritatis.
               </p>
-
-              <button className="bg-blueDeep text-center py-3 ps-6 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
-                Save Now!
-              </button>
             </div>
           </section>
         </div>
@@ -113,14 +115,11 @@ function About() {
               <div className="flex items-center mb-12">
                 <hr className="w-1/5  bg-gray-800 dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-2xl md:text-3xl text-blueDeep dark:text-gray-200 pl-4">
-                  What People have to say
+                  What Save with us?
                 </p>
               </div>
-              <div className="flex flex-col md:flex-row xl:mx-auto mt-20  p-3 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center xl:w-[1000px] lg:w-[800px] md:[600px]">
-                <div className="w-full md:w-1/3 p-4">
-                  <img src={person} alt="" />
-                </div>
-                <div className="w-full md:w-2/3 p-4 flex flex-col justify-center">
+              <div className="flex flex-col md:flex-row mt-20 mx-auto p-3 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center w-full">
+                <div className="w-full md:w-1/3 p-4 flex flex-col justify-center">
                   <h2 className="text-blueDeep text-medium text-3xl font-raleway">
                     Sarah Willams
                   </h2>

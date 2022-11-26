@@ -23,7 +23,7 @@ function About() {
               <p className="font-raleway font-medium text-xl text-blueDeep dark:text-gray-200">
                 Save. Spend. Invest. Repeat.
               </p>
-              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-3/4 lg:w-1/2 my-5">
+              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-2/5 my-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
                 soluta nisi ea unde hic porro dolores veritatis.
@@ -47,7 +47,7 @@ function About() {
             darkToggle && "dark"
           }`}
         >
-          <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
+          <section className="bg-gray-300 dark:bg-gray-900 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 py-20 flex flex-col">
               <h2 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-black text-blueDeep dark:text-white mb-8">
                 Spend Less, <br />

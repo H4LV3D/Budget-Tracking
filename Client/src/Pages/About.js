@@ -118,7 +118,7 @@ function About() {
                   What Save with us?
                 </p>
               </div>
-              <div className="flex flex-col md:flex-row mt-20 mx-auto p-3 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center w-full">
+              <div className="flex flex-col md:flex-row mt-20 md:mx-auto p-3 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center w-full">
                 <div className="w-full md:w-1/3 p-4 flex flex-col justify-center">
                   <h2 className="text-blueDeep text-medium text-3xl font-raleway">
                     Sarah Willams
@@ -130,46 +130,28 @@ function About() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                 </div>
-              </div>
-              <div className="mx-auto mt-20 flex flex-row items-center justify-center">
-                <a
-                  href="/"
-                  class="inline-flex items-center px-6 py-3 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 hover:scale-110  dark:hover:bg-gray-700 dark:hover:text-white"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="w-5 h-5 mr-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  Previous
-                </a>
-                <a
-                  href="/"
-                  class="inline-flex items-center px-6 py-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 hover:scale-110 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                >
-                  Next
-                  <svg
-                    aria-hidden="true"
-                    className="w-5 h-5 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </a>
+                <div className="w-full md:w-1/3 p-4 flex flex-col justify-center">
+                  <h2 className="text-blueDeep text-medium text-3xl font-raleway">
+                    Sarah Willams
+                  </h2>
+                  <p className="pt-5 text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full leading-7">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio quaerat cumque unde hic porro dolores veritatis quos,
+                    doloribus soluta nisi ea unde hic porro dolores veritatis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div className="w-full md:w-1/3 p-4 flex flex-col justify-center">
+                  <h2 className="text-blueDeep text-medium text-3xl font-raleway">
+                    Sarah Willams
+                  </h2>
+                  <p className="pt-5 text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full leading-7">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio quaerat cumque unde hic porro dolores veritatis quos,
+                    doloribus soluta nisi ea unde hic porro dolores veritatis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
               </div>
             </div>
           </section>

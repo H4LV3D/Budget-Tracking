@@ -43,7 +43,6 @@ function About() {
           </section>
         </div>
       </div>
-
       <div className="h-screen w-full">
         <div
           className={`flex items-center justify-center flex-col ${

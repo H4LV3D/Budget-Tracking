@@ -107,7 +107,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <a href="/login" className="text-decoration-none">
               <i
-                className="fas fa-user-circle fa-fw fa-xl px-5 text-blueDeep"
+                className="fas fa-user-circle fa-fw fa-xl px-sm-5 text-blueDeep"
                 aria-hidden="true"
               ></i>
             </a>

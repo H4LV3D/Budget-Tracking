@@ -54,20 +54,20 @@ function Home() {
               <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
                 Follow <br /> <span className="text-blueDeep">The</span> Money!
               </h2>
-              <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200">
+              <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 mb-10">
                 Save. Spend. Invest. Repeat.
               </p>
-              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base text-center mx-auto w-full md:w-3/4 lg:w-1/2 my-5">
+              <p className="hidden text-grat-800 dark:text-gray-300 font-raleway font-light text-base text-center mx-auto w-full md:w-3/4 lg:w-1/2 my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row  w-full px-10 justify-center">
-                <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[360px]">
-                  Budget Now
+                <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[360px] hover:scale-110">
+                  Start Budgeting
                 </button>
-                <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[360px] hover:bg-blueDeep hover:text-black">
-                  Start Tracking
+                <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[360px] hover:bg-blueDeep hover:text-black hover:scale-90">
+                  Finance Tracking
                 </button>
               </div>
             </div>
@@ -333,19 +333,19 @@ function Home() {
                     </p>
                   </div>
                   <div className="mt-8 mb-6 hidden lg:flex flex-row ">
-                    <p className="font-raleway font-medium text-lg text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
                       About
                     </p>
-                    <p className="font-raleway font-medium text-lg text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
                       Contact
                     </p>
-                    <p className="font-raleway font-medium text-lg text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
                       Login
                     </p>
-                    <p className="font-raleway font-medium text-lg text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
                       Sign Up
                     </p>
-                    <p className="font-raleway font-medium text-lg text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
                       Read more...
                     </p>
                   </div>

@@ -20,7 +20,7 @@ function Login() {
                 It's Easy, Login.
               </p>
 
-              <form action="" class="flex flex-col gap-6 mt-8">
+              <form action="/dashboard" class="flex flex-col gap-6 mt-8">
                 <div className="relative">
                   <label
                     for="email"

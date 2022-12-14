@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Toggle from "./toggle";
 
 const Navbar = () => {
@@ -6,17 +6,18 @@ const Navbar = () => {
 
   function menuToggle() {
     if (isOpen) {
-      var menu = document.getElementById("menu");
-      menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
-      menu.classList.add("w-screen", "h-screen", "opacity-95", "flex");
-    } else {
-      menu.classList.remove("w-screen", "h-screen", "opactiy-95", "flex");
+      let menu = document.getElementById("menu");
       menu.classList.add("w-0", "h-0", "opacity-0", "hidden");
+      menu.classList.remove("w-screen", "h-screen", "opacity-95", "flex");
+    } else {
+      var menu = document.getElementById("menu");
+      menu.classList.add("w-screen", "h-screen", "opactiy-95", "flex");
+      menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
     }
+    setIsOpen(!isOpen);
   }
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
     menuToggle();
   };
 

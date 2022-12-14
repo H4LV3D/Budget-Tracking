@@ -10,7 +10,7 @@ function Footer() {
               <div className="flex flex-row">
                 <div className="w-full lg:w-3/4">
                   <h2 className="font-sans text-3xl text-blueDeep font-bold mb-4">
-                    <i class="fab fa-bitcoin fa-1x fa-fw"></i>
+                    <i className="fab fa-bitcoin fa-1x fa-fw"></i>
                     Coin
                     <span className="font-raleway text-black dark:text-white font-medium">
                       Save
@@ -29,9 +29,9 @@ function Footer() {
                   </p>
                   <div className="sm:hidden w-full sm:w-1/2 flex flex-row items-center sm:justify-end">
                     <p className="flex">
-                      <i class="fab fa-instagram fa-2x fa-fw mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
-                      <i class="fab fa-twitter fa-fw fa-2x mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
-                      <i class="fab fa-linkedin fa-fw mx-2 fa-2x hover:text-blueDeep dark:text-blueDeep"></i>
+                      <i className="fab fa-instagram fa-2x fa-fw mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
+                      <i className="fab fa-twitter fa-fw fa-2x mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
+                      <i className="fab fa-linkedin fa-fw mx-2 fa-2x hover:text-blueDeep dark:text-blueDeep"></i>
                     </p>
                   </div>
                   <div className="mt-8 mb-6 hidden lg:flex flex-row ">
@@ -80,7 +80,7 @@ function Footer() {
             <div className="flex flex-col sm:flex-row mt-6">
               <div className="w-full md:w-1/2 mb-3 sm:my-0">
                 <p className="flex items-center text-md font-raleway font-medium text-black dark:text-gray-400">
-                  <i class="fas fa-copyright fa-md fa-fw"></i>
+                  <i className="fas fa-copyright fa-md fa-fw"></i>
                   Copywright 2022.
                   <span className="hidden md:block">CoinSave Inc.</span>
                   <span className="hidden lg:block">All Rights Reserved</span>
@@ -88,9 +88,9 @@ function Footer() {
               </div>
               <div className="hidden sm:flex w-full sm:w-1/2 flex-row items-center sm:justify-end">
                 <p className="flex">
-                  <i class="fab fa-instagram fa-1x sm:fa-2x fa-fw mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
-                  <i class="fab fa-twitter fa-1x fa-fw sm:fa-2x mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
-                  <i class="fab fa-linkedin fa-1x fa-fw mx-2 sm:fa-2x hover:text-blueDeep dark:text-blueDeep"></i>
+                  <i className="fab fa-instagram fa-1x sm:fa-2x fa-fw mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
+                  <i className="fab fa-twitter fa-1x fa-fw sm:fa-2x mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
+                  <i className="fab fa-linkedin fa-1x fa-fw mx-2 sm:fa-2x hover:text-blueDeep dark:text-blueDeep"></i>
                 </p>
               </div>
             </div>

@@ -11,7 +11,7 @@ function Dashboard() {
       <Sidebar />
       <section className="fixed h-screen left-64 display-size bg-gray-200 dark:bg-gray-800 p-9">
         <main>
-          <div className="w-full lg:w-2/3 py-3 flex justify-between items-center">
+          <div className="w-full lg:w-2/3 py-3 flex justify-between items-center shadow-sm">
             <h2 className="font-raleway font-bold text-2xl">Dashboard</h2>
             <div className="flex items-center justify-center space-x-5">
               <i class="fas fa-bars fa-lg fa-fw"></i>

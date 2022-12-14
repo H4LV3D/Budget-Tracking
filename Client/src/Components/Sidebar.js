@@ -23,7 +23,7 @@ function Sidebar() {
                 Save
               </span>
             </a>
-            <ul class="space-y-2 mt-5">
+            <ul class="space-y-2 mt-5 font-raleway">
               <li>
                 <a
                   href="/dashboard"
@@ -85,8 +85,6 @@ function Sidebar() {
                   </span>
                 </a>
               </li>
-            </ul>
-            <ul class="pt-5 mt-5 space-y-2 border-t border-gray-400 dark:border-gray-700">
               <li>
                 <a
                   href="/"
@@ -112,6 +110,24 @@ function Sidebar() {
                 >
                   <i class="fa-solid fa-circle-info fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
                   <span class="ml-3">Help</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="flex items-center p-3 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                >
+                  <i class="fas fa-gear fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
+                  <span class="ml-3">Settings</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="flex items-center p-3 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                >
+                  <i class="fas fa-globe-africa fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
+                  <span class="ml-3">Language</span>
                 </a>
               </li>
               <li>

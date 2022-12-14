@@ -53,7 +53,7 @@ const Navbar = () => {
               Download
             </a>
             <a
-              href="/"
+              href="/dashboard"
               className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
             >
               Dashboard

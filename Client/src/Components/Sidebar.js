@@ -27,7 +27,7 @@ function Sidebar() {
               <li>
                 <a
                   href="/dashboard"
-                  class="flex items-center p-3 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                  class="flex items-center p-3 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group bg-gray-300 dark:bg-gray-700"
                 >
                   <i class="fa-solid fa-house fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
                   <span class="ml-3">Dashboard</span>

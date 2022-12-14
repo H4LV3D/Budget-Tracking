@@ -9,10 +9,14 @@ function Dashboard() {
   return (
     <>
       <Sidebar />
-      <section className="fixed flex items-center justify-center flex-col h-screen left-64 display-size bg-gray-200 dark:bg-gray-800 p-5">
-        <div className="scoop">
-          <h4>Dashboard</h4>
-        </div>
+      <section className="fixed h-screen left-64 display-size bg-gray-200 dark:bg-gray-800 p-9">
+        <main>
+          <div className="row py-3 d-flex flex-row justify-between items-center">
+            <h2 className="font-raleway font-bold text-2xl">Dashboard</h2>
+            <i className="fas fa-search fa-lg fa-fw"></i>
+            <i className="fas fa-search fa-lg fa-fw"></i>
+          </div>
+        </main>
       </section>
     </>
   );

@@ -27,7 +27,7 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="row w-full xl:w-2/3 py-4 flex space-x-6 overflow-x-auto">
+          <div className="row w-full xl:w-2/3 py-4 flex justify-between space-x-6 overflow-x-auto">
             <div className="p-10 lg:py-10 lg:px-12 bg-gray-300 dark:bg-gray-800 dark:border dark:border-gray-700 shadow-lg rounded-lg">
               <p className="pb-3 dark:text-gray-400">
                 <span className="text-md font-light font-raleway">
@@ -80,6 +80,19 @@ function Dashboard() {
               </p>
             </div>
           </div>
+          <div className="row w-full xl:w-2/3 py-4 flex space-x-6 overflow-x-auto my-4">
+            <div className="bg-gray-300 p-6 pb-64 w-full rounded-lg">
+              <div className="flex justify-between items-center">
+                <h3 className="font-sans font-medium text-xl">
+                  Weekly Activity
+                </h3>
+                <span className="font-raleway font-light text-md border border-gray-400 rounded-md px-5 py-2 bg-gray-100">
+                  Daily
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="row w-full xl:w-2/3 py-4 flex space-x-6 overflow-x-auto my-4"></div>
         </main>
       </section>
     </>

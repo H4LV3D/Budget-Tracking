@@ -121,7 +121,7 @@ function Dashboard() {
               </li>
             </ul>
           </div>
-          <div class="absolute bottom-0 left-0 justify-center border-r border-gray-200 px-4 py-6 space-x-4 w-full lg:flex bg-white dark:bg-gray-800 z-20">
+          <div class="absolute bottom-0 lg:flex left-0 justify-center border-r bg-gray-200 border-gray-200 px-4 py-6 space-x-4 w-full dark:bg-gray-800 z-20">
             <a
               href="/"
               class="inline-flex justify-center p-4 text-gray-500 rounded cursor-pointer dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-600"

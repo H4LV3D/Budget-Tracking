@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "../Components/Navbar";
-import person from "../Assets/Logo.png";
+import Logo from "../Assets/Logo.png";
 import Footer from "../Components/Footer";
 
 function Home() {
@@ -244,7 +244,7 @@ function Home() {
               </div>
               <div className="flex flex-col md:flex-row xl:mx-auto mt-20  p-3 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center xl:w-[1000px] lg:w-[800px] md:[600px]">
                 <div className="w-full md:w-1/3 p-4">
-                  <img src={person} alt="" />
+                  <img src={Logo} alt="" />
                 </div>
                 <div className="w-full md:w-2/3 p-4 flex flex-col justify-center">
                   <h2 className="text-blueDeep text-medium text-3xl font-raleway">

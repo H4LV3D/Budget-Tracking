@@ -137,26 +137,22 @@ function Sidebar() {
               </li>
             </ul>
           </div>
-          <div class="absolute bottom-0 lg:flex left-0 justify-center border-r bg-gray-200 border-gray-300 px-4 py-6 space-x-4 w-full dark:bg-gray-800 z-20">
-            <a
-              href="/"
-              class="inline-flex justify-center p-4 text-gray-500 rounded cursor-pointer dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-600"
-            >
-              <i class="fas fa-globe-africa fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
-            </a>
-            <a
-              href="/"
-              class="inline-flex justify-center p-4 text-gray-500 rounded cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
-            >
-              <i class="fas fa-gear fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
-            </a>
-            <a
-              href="/login"
-              type="button"
-              class="inline-flex justify-center p-4 text-gray-500 rounded cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
-            >
-              <i class="fas fa-sign-out-alt fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
-            </a>
+          <div class="absolute bottom-0 lg:flex left-0 justify-center border-r bg-gray-200 border-gray-300 px-4 py-6 space-x-4 w-64 dark:bg-gray-800 z-20 font-raleway">
+            <div className="w-full rounded-md px-4 py-3 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700">
+              <i class="fas fa-user-circle fa-2x fa-fw my-auto text-gray-500 dark:text-blueDeep"></i>
+              <div>
+                <p className="text-gray-500 dark:text-gray-400">Toluwalope</p>
+                <small className="text-gray-500 dark:text-gray-400">
+                  Kinkunmz
+                </small>
+              </div>
+              <a
+                href="/login"
+                class=" text-gray-500 hover:text-gray-900 p-3 cursor-pointer dark:text-gray-400 dark:hover:text-blueDeep "
+              >
+                <i class="fas fa-sign-out-alt fa-lg fa-fw  py-auto"></i>
+              </a>
+            </div>
           </div>
         </aside>
       </section>

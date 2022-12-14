@@ -2,29 +2,23 @@ import React, { useState, useEffect } from "react";
 import Toggle from "./toggle";
 
 const Navbar = () => {
-  // write a function to toggle the menu icon from hamburger to close and toggle the function to open and close the menu
-
   const [isOpen, setIsOpen] = useState(false);
+
+  function menuToggle() {
+    if (isOpen) {
+      var menu = document.getElementById("menu");
+      menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
+      menu.classList.add("w-screen", "h-screen", "opacity-95", "flex");
+    } else {
+      menu.classList.remove("w-screen", "h-screen", "opactiy-95", "flex");
+      menu.classList.add("w-0", "h-0", "opacity-0", "hidden");
+    }
+  }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    menuToggle();
   };
-
-  // let button = document.getElementsByClassName("fa-stream");
-  // button.addEventListener("click", () => {
-  //   button.toggleClass("fa-stream fa-times-square");
-  // });
-  function openMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
-    menu.classList.add("w-screen", "h-screen", "opacity-95", "flex");
-  }
-
-  function closeMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.remove("w-screen", "h-screen", "opactiy-95", "flex");
-    menu.classList.add("w-0", "h-0", "opacity-0", "hidden");
-  }
 
   return (
     <>
@@ -80,9 +74,11 @@ const Navbar = () => {
             ></i>
           </button>
 
-          <button className="mx-3" onClick={openMenu}>
+          <button className="mx-3" onClick={toggleMenu}>
             <i
-              className={`fas fa-stream fa-lg fa-fw sm:p-3 py-3 text-blueDeep`}
+              className={`fas ${
+                isOpen ? "fa-times-square" : "fa-stream"
+              } fa-lg fa-fw sm:p-3 py-3 text-blueDeep`}
             ></i>
           </button>
         </div>
@@ -133,12 +129,6 @@ const Navbar = () => {
         className="hidden z-90 w-0 h-0 justify-center pt-12 bg-gray-900 opacity-0 duration-700 font-raleway font-medium text-lg"
       >
         <div className="flex flex-col text-white text-center text-xl font-lightName">
-          <p className="hover:text-amber-500 duration-300 my-6">
-            <i
-              className="fas fa-times-circle fa-2x fa-fw text-blueDeep mb-9"
-              onClick={closeMenu}
-            ></i>
-          </p>
           <a
             className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"

@@ -16,25 +16,27 @@ function Dashboard() {
             <div className="flex items-center justify-center space-x-5">
               <i class="fas fa-bars fa-lg fa-fw"></i>
               <div>
-                <div class="flex rounded-md shadow-sm">
-                  <span class="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-gray-700 dark:border-gray-700 dark:text-gray-400">
-                    Default
-                  </span>
-                  <input
-                    type="text"
-                    class="py-3 px-4 pr-11 block w-full border-gray-200 shadow-sm rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
-                  />
+                <div>
+                  <div class="flex rounded-md shadow-sm">
+                    <span class="p-3 flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-gray-50 text-sm text-gray-500 dark:bg-gray-700 dark:border-gray-700 dark:text-gray-400">
+                      Default
+                    </span>
+                    <input
+                      type="text"
+                      class="py-3 pr-11 block w-full border-gray-200 shadow-sm rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="row w-full lg:w-2/3 py-4 flex space-x-6 overflow-x-auto">
-            <div className="p-10 lg:py-8 lg:px-10 bg-gray-300 dark:bg-gray-900 rounded-lg">
-              <p className="pb-3">
-                <i class="fas fa-chart-line fa-lg fa-fw pr-3"></i>
+            <div className="p-10 lg:py-8 lg:px-10 bg-gray-300 dark:bg-gray-800 dark:border dark:border-gray-700 shadow-lg rounded-lg">
+              <p className="pb-3 dark:text-gray-400">
                 <span className="text-md font-light font-raleway">
                   Total Earning
                 </span>
+                <i class="fas fa-chart-line fa-lg fa-fw pr-3"></i>
               </p>
               <div class="w-full bg-gray-200 h-2 rounded-lg mb-3">
                 <div
@@ -42,7 +44,9 @@ function Dashboard() {
                   style={{ width: "70%" }}
                 ></div>
               </div>
-              <p className="font-black font-archivo text-2xl">$450,000.30</p>
+              <p className="font-black font-archivo text-2xl dark:text-gray-400">
+                $450,000.30
+              </p>
             </div>
             <div className="py-16 px-20 bg-gray-300 rounded-lg"></div>
             <div className="py-16 px-20 bg-gray-300 rounded-lg"></div>

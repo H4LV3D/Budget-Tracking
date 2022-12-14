@@ -23,7 +23,7 @@ const Navbar = () => {
             <span className="text-blueDeep font-sans font-bold text-lg">
               Coin
             </span>
-            <span className="text-gray-600 dark:text-gray-400 font-raleway font-black text-lg">
+            <span className="text-gray-600 dark:text-gray-400 font-raleway font-medium text-lg">
               Save
             </span>
           </a>
@@ -118,17 +118,17 @@ const Navbar = () => {
       </div>
       <div
         id="menu"
-        className="hidden z-90 w-0 h-0 justify-center items-center bg-gray-900 opacity-0 duration-700 font-raleway font-medium text-lg"
+        className="hidden z-90 w-0 h-0 justify-center pt-12 bg-gray-900 opacity-0 duration-700 font-raleway font-medium text-lg"
       >
         <div className="flex flex-col text-white text-center text-xl font-lightName">
-          <p className="hover:text-amber-500 duration-300 mb-12">
+          <p className="hover:text-amber-500 duration-300 my-6">
             <i
               className="fas fa-times-circle fa-2x fa-fw text-blueDeep mb-9"
               onClick={closeMenu}
             ></i>
           </p>
           <a
-            className="hover:text-amber-500 my-5 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
+            className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
             About

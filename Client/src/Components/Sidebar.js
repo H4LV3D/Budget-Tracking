@@ -130,19 +130,17 @@ function Sidebar() {
             </a>
             <a
               href="/"
-              data-tooltip-target="tooltip-settings"
               class="inline-flex justify-center p-4 text-gray-500 rounded cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
             >
               <i class="fas fa-gear fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
             </a>
-
-            <button
+            <a
+              href="/login"
               type="button"
-              data-dropdown-toggle="language-dropdown"
-              class="inline-flex justify-center p-4 text-gray-500 rounded cursor-pointer dark:hover:text-white dark:text-gray-400 hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+              class="inline-flex justify-center p-4 text-gray-500 rounded cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
             >
               <i class="fas fa-sign-out-alt fa-lg fa-fw dark:text-white text-blueDeep my-auto"></i>
-            </button>
+            </a>
           </div>
         </aside>
       </section>

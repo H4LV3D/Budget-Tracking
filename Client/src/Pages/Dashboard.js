@@ -9,7 +9,11 @@ function Dashboard() {
   return (
     <>
       <Sidebar />
-      <section className="fixed flex items-center justify-center flex-col h-screen left-64 display-size bg-gray-200 dark:bg-gray-800"></section>
+      <section className="fixed flex items-center justify-center flex-col h-screen left-64 display-size bg-gray-200 dark:bg-gray-800 p-5">
+        <div className="scoop">
+          <h4>Dashboard</h4>
+        </div>
+      </section>
     </>
   );
 }

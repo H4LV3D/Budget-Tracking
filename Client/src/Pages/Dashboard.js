@@ -6,17 +6,6 @@ import "../Assets/fontawesome-free-6.2.1-web/css/brands.css";
 import "../Assets/fontawesome-free-6.2.1-web/css/fontawesome.css";
 
 function Dashboard() {
-  function openMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
-    menu.classList.add("w-screen", "h-screen", "opacity-95", "flex");
-  }
-
-  function closeMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.remove("w-screen", "h-screen", "opactiy-95", "flex");
-    menu.classList.add("w-0", "h-0", "opacity-0", "hidden");
-  }
   return (
     <>
       <section>

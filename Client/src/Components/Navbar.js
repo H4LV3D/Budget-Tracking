@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Toggle from "./toggle";
 
 const Navbar = () => {
+  // write a function to toggle the menu icon from hamburger to close and toggle the function to open and close the menu
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // let button = document.getElementsByClassName("fa-stream");
+  // button.addEventListener("click", () => {
+  //   button.toggleClass("fa-stream fa-times-square");
+  // });
   function openMenu() {
     var menu = document.getElementById("menu");
     menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");

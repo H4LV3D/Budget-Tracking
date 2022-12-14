@@ -63,13 +63,15 @@ const Navbar = () => {
         <div className="flex md:hidden items-center justify-center">
           <button className="mx-3">
             <i
-              className="fas fa-user-circle fa-fw fa-xl px-5 text-blueDeep"
+              className="fas fa-user-circle fa-fw fa-xl sm:px-5 py-3 text-blueDeep"
               aria-hidden="true"
             ></i>
           </button>
 
           <button className="mx-3" onClick={openMenu}>
-            <i className={`fas fa-stream fa-lg fa-fw p-3 text-blueDeep`}></i>
+            <i
+              className={`fas fa-stream fa-lg fa-fw sm:p-3 py-3 text-blueDeep`}
+            ></i>
           </button>
         </div>
         <div className="hidden md:flex flex-nowrap">

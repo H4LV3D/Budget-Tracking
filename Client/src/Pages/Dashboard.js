@@ -31,12 +31,12 @@ function Dashboard() {
             </div>
           </div>
           <div className="row w-full lg:w-2/3 py-4 flex space-x-6 overflow-x-auto">
-            <div className="p-10 lg:py-8 lg:px-10 bg-gray-300 dark:bg-gray-800 dark:border dark:border-gray-700 shadow-lg rounded-lg">
+            <div className="p-10 lg:py-8 lg:px-6 bg-gray-300 dark:bg-gray-800 dark:border dark:border-gray-700 shadow-lg rounded-lg">
               <p className="pb-3 dark:text-gray-400">
                 <span className="text-md font-light font-raleway">
                   Total Earning
                 </span>
-                <i class="fas fa-chart-line fa-lg fa-fw pr-3"></i>
+                <i class="fas fa-chart-simple fa-lg fa-fw pl-4"></i>
               </p>
               <div class="w-full bg-gray-200 h-2 rounded-lg mb-3">
                 <div

@@ -69,29 +69,28 @@ function Register() {
                       name="email"
                       id="email"
                       placeholder="mrmoneywiththevibe@gmail.com"
-                      autoFocus
                     />
                   </div>
                   <div className="relative w-full md:w-1/2 ">
                     <label
-                      for="password"
+                      for="gender"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 pb-1"
                     >
-                      Sex
+                      Gender
                     </label>
                     <input
                       className="focus:border-blue py-2 px-4 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full bg-gray-100 dark:bg-gray-800 dark:border-0 dark:text-gray-200 active:bg-gray-700"
-                      type="password"
-                      name="password"
-                      id="password"
-                      placeholder="Password"
+                      type="Sex"
+                      name="Sex"
+                      id="gender"
+                      placeholder="Male"
                     />
                   </div>
                 </div>
                 <div className="md:flex flex-row gap-10 w-full">
                   <div className="relative w-full md:w-1/2 mb-6 md:mb-0">
                     <label
-                      for="email"
+                      for="password"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 pb-1"
                     >
                       Password
@@ -100,14 +99,13 @@ function Register() {
                       className="py-2 px-4 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full bg-gray-100 dark:bg-gray-800 dark:border-0 dark:text-gray-200 active:bg-gray-700"
                       type="Password"
                       name="Password"
-                      id="Password"
+                      id="password"
                       placeholder="Password"
-                      autoFocus
                     />
                   </div>
                   <div className="relative w-full md:w-1/2">
                     <label
-                      for="password"
+                      for="confirm_password"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 pb-1"
                     >
                       Confirm Password
@@ -116,7 +114,7 @@ function Register() {
                       className="focus:border-blue py-2 px-4 rounded-md border border-gray-500 focus:outline-none focus:border-blue w-full bg-gray-100 dark:bg-gray-800 dark:border-0 dark:text-gray-200 active:bg-gray-700"
                       type="password"
                       name="password"
-                      id="password"
+                      id="confirm_password"
                       placeholder="Confirm Password"
                     />
                   </div>
@@ -160,7 +158,7 @@ function Register() {
                 <p>Already have an account?</p>
                 <Link to="/login">
                   <p>
-                    <button className="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
+                    <button className="py-3 px-6 text-blueDeep border border-blueDeep dark:bg-gray-800 dark:border-gray-900 rounded-md hover:scale-110 hover:bg-blueDeep hover:text-white duration-300">
                       Login
                     </button>
                   </p>

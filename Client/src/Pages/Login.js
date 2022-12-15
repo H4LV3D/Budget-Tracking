@@ -12,9 +12,9 @@ function Login() {
       </header>
       <div>
         <section class="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center justify-center">
-          <div class="bg-gray-100 dark:bg-gray-700 flex rounded-2xl shadow-xl p-12 w-full items-center lg:w-[900px] font-raleway mx-10 lg:mx-0 my-28 md:my-0">
-            <div class="w-full md:w-1/2 md:px-8 ">
-              <h2 class="font-sans font-black text-blueDeep dark:text-white text-4xl ">
+          <div class="bg-gray-100 dark:bg-gray-700 flex rounded-2xl shadow-xl py-12 px-8 w-full items-center lg:w-[900px] font-raleway mx-6 lg:mx-0 my-28 md:my-0">
+            <div class="w-full md:w-1/2 md:px-10">
+              <h2 class="font-sans font-black text-blueDeep dark:text-white text-4xl">
                 Login
               </h2>
               <p class="font-raleway text-md dark:text-gray-300 mt-4 text-blue">
@@ -57,7 +57,7 @@ function Login() {
                   <a href="/">Forgot your password?</a>
                 </div>
 
-                <button className=" bg-blueDeep shadow-2xl text-white rounded-lg py-2 hover:scale-105 duration-300">
+                <button className=" bg-blueDeep shadow-2xl text-white rounded-lg py-3 md:py-2 hover:scale-105 duration-300">
                   Login
                 </button>
               </form>
@@ -134,7 +134,7 @@ function Login() {
                 <p>Don't have an account?</p>
                 <Link to="/register">
                   <p>
-                    <button class="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
+                    <button className="py-3 px-6 text-blueDeep border border-blueDeep dark:bg-gray-800 dark:border-gray-900 rounded-md hover:scale-110 hover:bg-blueDeep hover:text-white duration-300">
                       Register
                     </button>
                   </p>

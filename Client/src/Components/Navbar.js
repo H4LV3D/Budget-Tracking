@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex flex-row flex-wrap px-8 md:px-12 py-5 mx-auto md:items-center justify-between shadow-md lg:shadow-xl lg:rounded-xl lg:mx-10 text-gray-700 bg-gray-200 dark:bg-gray-800 md:pt-8">
+      <div className="flex flex-row flex-wrap px-4 sm:px-8 md:px-12 py-5 md:items-center justify-between shadow-md lg:shadow-xl rounded-md sm:rounded-lg lg:rounded-xl mx-2 sm:mx-6 lg:mx-10 text-gray-700 bg-gray-200 dark:bg-gray-800 md:pt-8">
         <div className="flex">
           <Link to="/">
             <p className="flex items-center md:mb-0 mr-3">

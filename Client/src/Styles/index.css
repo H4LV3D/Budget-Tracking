@@ -110,11 +110,16 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px #e5e7eb inset !important;
+  -webkit-box-shadow: 0 0 0 0px #ffffff3c inset !important;
 }
 
 input:-webkit-autofill {
   -webkit-text-fill-color: rgb(34, 30, 30) !important;
+}
+input:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -122,17 +127,17 @@ input:-webkit-autofill {
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #5992c7 inset !important;
+    -webkit-box-shadow: 0 0 0 0px #5992c7 inset !important;
+    background-color: #ffffff3c;
   }
 
   input:-webkit-autofill {
-    -webkit-text-fill-color: white !important;
+    -webkit-text-fill-color: #5992c7 !important;
   }
-}
 
-input:focus {
-  border-color: #5992c7 !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: none !important;
+  input:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important;
+  }
 }

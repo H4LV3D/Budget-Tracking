@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router-dom";
 
 function Register() {
   const darkToggle = false;
@@ -157,11 +158,13 @@ function Register() {
 
               <div className="mt-3 text-xs flex justify-between items-center text-blue dark:text-gray-400 pt-4 border-t border-blueDeep">
                 <p>Already have an account?</p>
-                <a href="/login">
-                  <button className="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
-                    Login
-                  </button>
-                </a>
+                <Link to="/login">
+                  <p>
+                    <button className="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
+                      Login
+                    </button>
+                  </p>
+                </Link>
               </div>
               <div className="md:hidden">
                 <div className="mt-12 grid grid-cols-3 items-center text-gray-400">

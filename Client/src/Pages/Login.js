@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router-dom";
 
 function Login() {
   const darkToggle = false;
@@ -131,11 +132,13 @@ function Login() {
 
               <div class="mt-6 text-xs flex justify-between items-center text-blue dark:text-gray-400  pt-4 ">
                 <p>Don't have an account?</p>
-                <a href="/register">
-                  <button class="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
-                    Register
-                  </button>
-                </a>
+                <Link to="/register">
+                  <p>
+                    <button class="py-3 px-6 bg-blueDeep dark:bg-gray-800 dark:border-gray-900 border rounded-md hover:scale-110 duration-300">
+                      Register
+                    </button>
+                  </p>
+                </Link>
               </div>
             </div>
 

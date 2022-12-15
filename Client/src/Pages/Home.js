@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "../Components/Navbar";
 import Logo from "../Assets/Logo.png";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 function Home() {
   const darkToggle = false;
@@ -64,12 +65,16 @@ function Home() {
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row  w-full px-10 justify-center">
-                <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[360px] hover:scale-110">
-                  Start Budgeting
-                </button>
-                <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[360px] hover:bg-blueDeep hover:text-black hover:scale-90">
-                  Finance Tracking
-                </button>
+                <Link to="/dashboard">
+                  <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[360px] hover:scale-110">
+                    Start Budgeting
+                  </button>
+                </Link>
+                <Link to="/dashboard">
+                  <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[360px] hover:bg-blueDeep hover:text-black hover:scale-90">
+                    Finance Tracking
+                  </button>
+                </Link>
               </div>
             </div>
           </section>

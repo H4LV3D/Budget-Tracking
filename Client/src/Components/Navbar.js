@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Toggle from "./toggle";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,18 +54,11 @@ const Navbar = () => {
             >
               Tracking
             </a>
-            <a
-              href="/"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
-            >
-              Download
-            </a>
-            <a
-              href="/dashboard"
-              className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200"
-            >
-              Dashboard
-            </a>
+            <Link to="/dashboard">
+              <p className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200">
+                Dashboard
+              </p>
+            </Link>
           </nav>
         </div>
         <div className="flex md:hidden items-center justify-center">

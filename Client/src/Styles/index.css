@@ -75,6 +75,17 @@ input:checked + .slideBtnTg:before {
 .display-size {
   width: calc(100% - 16rem) !important;
 }
+@media screen and (max-width: 1024px) {
+  .display-size {
+    width: calc(100% - 4rem) !important;
+  }
+}
+@media screen and (max-width: 478px) {
+  .display-size {
+    width: 100% !important;
+  }
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .container-snap::-webkit-scrollbar {
   display: none;

@@ -8,7 +8,7 @@ const Toggle = () => {
     <div className="flex items-center justify-center">
       <label htmlFor="checkbox">
         <svg
-          className="w-6 h-6 dark:text-gray-300 mr-2"
+          className="w-6 h-6 dark:text-gray-300 mr-4"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

@@ -9,10 +9,12 @@ function Dashboard() {
   return (
     <>
       <Sidebar />
-      <section className="fixed overflow-y-auto left-64 display-size bg-gray-200 dark:bg-gray-800 p-9">
-        <main>
+      <section className="absolute overflow-y-auto left-0 sm:left-16 lg:left-64 display-size bg-gray-200 dark:bg-gray-800 p-9">
+        <main className="lg:w-256 xl:w-full mx-auto">
           <div className="w-full xl:w-2/3 py-3 flex justify-between items-center shadow-sm">
-            <h2 className="font-raleway font-bold text-2xl">Dashboard</h2>
+            <h2 className="font-raleway font-bold text-2xl text-gray-700 dark:text-gray-200">
+              Dashboard
+            </h2>
             <div className="flex items-center justify-center space-x-5">
               <div class="flex rounded-md shadow-sm font-raleway">
                 <button className="py-2 px-3 btn bg-white border-gray-200 shadow-sm rounded-l-md text-md dark:bg-gray-800 dark:text-gray-400 dark:border-l  dark:border-b dark:border-t dark:border-blueDeep">
@@ -80,24 +82,26 @@ function Dashboard() {
               </p>
             </div>
           </div>
-          <div className="row w-full xl:w-2/3 py-4 flex space-x-6 overflow-x-auto my-4">
-            <div className="bg-gray-300 p-6 pb-64 w-full rounded-lg">
+          <div className="row w-full xl:w-2/3 flex space-x-6 overflow-x-auto my-4">
+            <div className="bg-gray-300 dark:bg-gray-700 p-6 pb-64 w-full rounded-lg">
               <div className="flex justify-between items-center">
-                <h3 className="font-sans font-medium text-xl">
+                <h3 className="font-sans font-medium text-xl text-gray-700 dark:text-gray-200">
                   Weekly Activity
                 </h3>
-                <span className="font-raleway font-light text-md border border-gray-400 rounded-md px-5 py-2 bg-gray-100">
+                <span className="font-raleway font-light text-md border border-gray-400 rounded-md px-5 py-2 bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300">
                   Daily
                 </span>
               </div>
             </div>
           </div>
-          <div className="row w-full xl:w-2/3 py-4 flex space-x-6 overflow-x-auto my-4">
-            <div className="p-6">
+          <div className="row w-full xl:w-2/3 py-4 flex space-x-6 overflow-x-auto mb-4">
+            <div className="p-6 w-full">
               <div className="head">
-                <h1>Recent Purchases</h1>
+                <h3 className="font-sans font-medium text-xl pb-3 text-gray-700 dark:text-gray-200">
+                  Recent Purchase
+                </h3>
               </div>
-              <div className="table">
+              <div className="table w-full font-raleway">
                 <div class="flex flex-col">
                   <div class="-m-1.5 overflow-x-auto">
                     <div class="p-1.5 min-w-full inline-block align-middle">
@@ -109,19 +113,19 @@ function Dashboard() {
                                 scope="col"
                                 class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase"
                               >
-                                Name
+                                Item
                               </th>
                               <th
                                 scope="col"
                                 class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase"
                               >
-                                Age
+                                Price
                               </th>
                               <th
                                 scope="col"
                                 class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase"
                               >
-                                Address
+                                Date
                               </th>
                               <th
                                 scope="col"

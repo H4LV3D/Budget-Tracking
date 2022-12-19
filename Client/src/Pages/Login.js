@@ -12,7 +12,7 @@ function Login() {
       </header>
       <div>
         <section class="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center justify-center">
-          <div class="bg-gray-100 dark:bg-gray-700 flex rounded-2xl shadow-xl py-12 px-8 w-full items-center lg:w-[900px] font-raleway mx-6 lg:mx-0 my-28 md:my-0">
+          <div class="bg-gray-100 dark:bg-gray-700 flex rounded-2xl shadow-xl py-12 px-8 md:p-18 w-full items-center lg:w-[900px] font-raleway mx-6 lg:mx-0 my-28 md:my-0">
             <div class="w-full md:w-1/2 md:px-10">
               <h2 class="font-sans font-black text-blueDeep dark:text-white text-4xl">
                 Login

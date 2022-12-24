@@ -8,12 +8,16 @@ const Navbar = () => {
   function menuToggle() {
     if (isOpen) {
       let menu = document.getElementById("menu");
+      let navbar = document.getElementById("navbar");
       menu.classList.add("w-0", "h-0", "opacity-0", "hidden");
       menu.classList.remove("w-screen", "h-screen", "opacity-95", "flex");
+      navbar.classList.add("overflow-y-hidden");
     } else {
       var menu = document.getElementById("menu");
+      let navbar = document.getElementById("navbar");
       menu.classList.add("w-screen", "h-screen", "opactiy-95", "flex");
       menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
+      navbar.classList.remove("overflow-y-hidden");
     }
     setIsOpen(!isOpen);
   }
@@ -24,7 +28,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex flex-row flex-wrap px-4 sm:px-8 md:px-12 py-5 md:items-center justify-between shadow-md lg:shadow-xl rounded-md sm:rounded-lg lg:rounded-xl mx-2 sm:mx-6 lg:mx-10 text-gray-700 bg-gray-200 dark:bg-gray-800 md:pt-8">
+      <div
+        className="flex flex-row flex-wrap px-4 sm:px-8 md:px-12 py-6 md:items-center justify-between shadow-md lg:shadow-xl rounded-md sm:rounded-lg lg:rounded-xl mx-2 sm:mx-6 lg:mx-20 text-gray-700 bg-gray-200 dark:bg-gray-800 mt-2 md:mt-0 overf"
+        id="navbar"
+      >
         <div className="flex">
           <Link to="/">
             <p className="flex items-center md:mb-0 mr-3">
@@ -108,9 +115,9 @@ const Navbar = () => {
       </div>
       <div
         id="menu"
-        className="hidden z-90 w-0 h-0 justify-center pt-12 bg-gray-900 opacity-0 duration-700 font-raleway font-medium text-lg"
+        className="hidden z-90 w-0 h-0 justify-center text-gray-800 dark:text-blueDeep bg-gray-200 dark:bg-gray-800 opacity-0 duration-700 font-raleway font-medium text-lg overflow-y-scroll min-vh-100"
       >
-        <div className="flex flex-col text-white text-center text-xl font-lightName">
+        <div className="flex flex-col text-center items-center text-xl font-lightName text-gray-800 dark:text-gray-300 pt-6">
           <Link to="/about">
             <p className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300">
               About Us

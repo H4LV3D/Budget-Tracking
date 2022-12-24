@@ -4,8 +4,8 @@ function Footer() {
   return (
     <>
       <footer className="w-full">
-        <section className="bg-gray-200 dark:bg-gray-700 w-full flex items-center sm: sm:my-0">
-          <div className="container sm:mx-auto px-12 my-20 flex flex-col justify-center">
+        <section className="bg-gray-200 dark:bg-gray-700 w-full flex items-center sm:my-0">
+          <div className="container sm:mx-auto px-6 sm:px-12 my-20 flex flex-col justify-center">
             <div className="mt-10 mb-4">
               <div className="flex flex-row">
                 <div className="w-full lg:w-3/4">
@@ -25,7 +25,12 @@ function Footer() {
                     Optio quaerat cumque unde hic porro dolores veritatis quos,
                     doloribus soluta nisi ea unde hic porro dolores veritatis.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio quaerat cumque unde hic porro dolores veritatis quos.
+                  </p>
+                  <p className="md:hidden font-raleway font-medium text-xl text-blueDeep dark:text-gray-200 mt-4 mb-12">
+                    Contact <br />
+                    <span className="text-md text-gray-800  dark:text-gray-300 font-light">
+                      contact@coinsave.com
+                    </span>
                   </p>
                   <div className="sm:hidden w-full sm:w-1/2 flex flex-row items-center sm:justify-end">
                     <p className="flex">

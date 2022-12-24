@@ -9,14 +9,14 @@ function About() {
       <header className="fixed w-full pt-2 top-0 z-50 text-gray-700">
         <Navbar darkToggle={darkToggle} />
       </header>
-      <div className="h-screen w-full">
+      <div className="min-h-screen w-full">
         <div
           className={`flex items-center justify-center flex-col ${
             darkToggle && "dark"
           }`}
         >
           <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
-            <div className="container mx-auto px-6 py-20 flex flex-col ">
+            <div className="container mx-auto px-6 py-24 flex flex-col ">
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl  font-sans font-black text-blueDeep dark:text-white mb-8">
                 About <br /> <span className="text-blueDeep">Coin</span>Save
               </h2>
@@ -44,7 +44,7 @@ function About() {
           </section>
         </div>
       </div>
-      <div className="h-screen w-full">
+      <div className="min-h-screen w-full">
         <div
           className={`flex items-center justify-center flex-col ${
             darkToggle && "dark"
@@ -74,23 +74,23 @@ function About() {
           </section>
         </div>
       </div>
-      <div className="h-screen w-full">
+      <div className="min-h-screen w-full">
         <div
           className={`flex items-center justify-center flex-col ${
             darkToggle && "dark"
           }`}
         >
-          <section className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center  sm:my-0">
+          <section className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center py-24 sm:py-0">
             <div className="md:w-1/2 md:min-h-screen"></div>
-            <div className="md:w-1/2 sm:w-2/3 sm:mx-auto px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
+            <div className="md:w-1/2 sm:w-2/3 sm:mx-auto px-6 sm:px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
               <div className="flex items-center mb-4">
-                <hr className="w-1/4  bg-gray-800 dark:bg-white" />
-                <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 pl-4">
+                <hr className="hidden sm:block w-1/4 bg-gray-800 dark:bg-white" />
+                <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 sm:pl-4">
                   Expense Tracking
                 </p>
               </div>
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-black text-blueDeep dark:text-white mb-12">
-                Tracking at <br /> your tips
+                Tracking at <br className="hidden sm:block" /> your tips.
               </h2>
               <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-2/3 leading-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
@@ -99,6 +99,9 @@ function About() {
                 dolor sit amet consectetur adipisicing elit. Optio quaerat
                 cumque unde hic porro dolores veritatis quos.
               </p>
+              <button className="border border-blueDeep text-blueDeep dark:bg-blueDeep dark:text-gray-200  text-center py-3 ps-6 sm:px-10 mr-3 text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
+                Save Now!
+              </button>
             </div>
           </section>
         </div>

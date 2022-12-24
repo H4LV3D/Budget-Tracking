@@ -126,7 +126,7 @@ function Sidebar() {
             </ul>
           </div>
           <div className="absolute bottom-0 lg:flex left-0 justify-center border-r bg-gray-200 border-gray-300 lg:px-4 xl:p-4 space-x-4 w-64 dark:bg-gray-800 z-20 font-raleway">
-            <div className="w-full rounded-md px-4 py-3 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700">
+            <div className="w-full rounded-md px-4 py-3 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-700 bg-gray-300 dark:bg-gray-800">
               <i className="fas fa-user-circle fa-2x fa-fw my-auto text-gray-500 dark:text-blueDeep"></i>
               <div>
                 <p className="text-gray-500 dark:text-gray-400">Toluwalope</p>

@@ -8,16 +8,14 @@ const Navbar = () => {
   function menuToggle() {
     if (isOpen) {
       let menu = document.getElementById("menu");
-      let navbar = document.getElementById("navbar");
       menu.classList.add("w-0", "h-0", "opacity-0", "hidden");
       menu.classList.remove("w-screen", "h-screen", "opacity-95", "flex");
-      navbar.classList.add("overflow-y-hidden");
+      document.body.style.overflow = "scroll";
     } else {
+      document.body.style.overflow = "hidden";
       var menu = document.getElementById("menu");
-      let navbar = document.getElementById("navbar");
       menu.classList.add("w-screen", "h-screen", "opactiy-95", "flex");
       menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
-      navbar.classList.remove("overflow-y-hidden");
     }
     setIsOpen(!isOpen);
   }

@@ -101,12 +101,10 @@ const Navbar = () => {
           </div>
           <div className="lg:hidden">
             <Link to="/login">
-              <a href="/login" className="text-decoration-none">
-                <i
-                  className="fas fa-user-circle fa-fw fa-xl px-sm-5 text-gray-600 pl-5"
-                  aria-hidden="true"
-                ></i>
-              </a>
+              <i
+                className="fas fa-user-circle fa-fw fa-xl px-sm-5 text-gray-600 pl-5"
+                aria-hidden="true"
+              ></i>
             </Link>
           </div>
         </div>
@@ -146,12 +144,12 @@ const Navbar = () => {
               Register
             </p>
           </Link>
-          <p
+          <div
             className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
             <Toggle />
-          </p>
+          </div>
         </div>
       </div>
     </>

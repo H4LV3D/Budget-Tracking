@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
-import Logo from "../Assets/Logo.png";
+// import Logo from "../Assets/Logo.png";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
 
@@ -39,6 +39,57 @@ function Home() {
     return elRef;
   }
   const scrollRef = useHorizontalScroll();
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Define an array of objects to store the pictures and texts that you want to display
+  const picturesAndTexts = [
+    {
+      picture: "../Assets/images/picture-1.jpg",
+      name: "Sarah Smith",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
+    },
+    {
+      picture: "picture2.jpg",
+      name: "John Doe",
+      text: "Text for picture 2",
+    },
+    {
+      picture: "picture3.jpg",
+      name: "Jane Doe",
+      text: "Text for picture 3",
+    },
+    {
+      picture: "picture4.jpg",
+      name: "John Smith",
+      text: "Text for picture 4",
+    },
+    {
+      picture: "picture5.jpg",
+      name: "Jane Smith",
+      text: "Text for picture 5",
+    },
+  ];
+
+  // Define a function to go to the previous picture and text
+  const goToPrev = () => {
+    // Decrement the current index, unless it's already at the first item, in which case we set it to the last item
+    setCurrentIndex(
+      currentIndex === 0 ? picturesAndTexts.length - 1 : currentIndex - 1
+    );
+  };
+
+  // Define a function to go to the next picture and text
+  const goToNext = () => {
+    // Increment the current index, unless it's already at the last item, in which case we set it to the first item
+    setCurrentIndex(
+      currentIndex === picturesAndTexts.length - 1 ? 0 : currentIndex + 1
+    );
+  };
+
+  // Get the current picture and text based on the current index
+  const { picture, name, text } = picturesAndTexts[currentIndex];
+  console.log(picture);
 
   return (
     <>
@@ -252,16 +303,14 @@ function Home() {
               </div>
               <div className="flex flex-col md:flex-row xl:mx-auto mt-20 p-5 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center xl:w-[1000px] lg:w-[800px] md:[600px]">
                 <div className="w-full md:w-1/3 p-4">
-                  <img src={Logo} alt="" />
+                  <img src={picture} alt={name} />
                 </div>
                 <div className="w-full md:w-2/3 p-4 flex flex-col justify-center">
                   <h2 className="text-blueDeep text-medium text-xl md:text-3xl font-raleway">
-                    Sarah Willams
+                    {name}
                   </h2>
                   <p className="pt-2 text-sm text-gray-800 dark:text-gray-300 font-raleway font-light w-full leading-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio quaerat cumque unde hic porro dolores veritatis quos,
-                    doloribus soluta nisi ea unde hic porro dolores veritatis.
+                    {text}
                   </p>
                 </div>
               </div>
@@ -269,40 +318,18 @@ function Home() {
                 <a
                   href="/"
                   className="inline-flex items-center px-6 py-3 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 hover:scale-110  dark:hover:bg-gray-700 dark:hover:text-white"
+                  onClick={goToPrev}
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="w-5 h-5 mr-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  Previous
+                  <i className="fas fa-arrow-left fa-lg fa-fw"></i>
+                  Back
                 </a>
                 <a
                   href="/"
                   className="inline-flex items-center px-6 py-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 hover:scale-110 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  onClick={goToNext}
                 >
                   Next
-                  <svg
-                    aria-hidden="true"
-                    className="w-5 h-5 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
+                  <i className="fas fa-arrow-right fa-lg fa-fw"></i>
                 </a>
               </div>
             </div>

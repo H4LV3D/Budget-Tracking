@@ -8,13 +8,15 @@ const Navbar = () => {
   function menuToggle() {
     if (isOpen) {
       let menu = document.getElementById("menu");
+      document.getElementById("navbar").classList.remove("hidden");
+      document.getElementById("navbar").classList.add("flex", "mt-2");
       menu.classList.add("w-0", "h-0", "opacity-0", "hidden");
-      menu.classList.remove("w-screen", "h-screen", "opacity-95", "flex");
-      document.body.style.overflow = "scroll";
+      menu.classList.remove("w-screen", "min-h-screen", "opacity-95", "flex");
     } else {
-      document.body.style.overflow = "hidden";
       var menu = document.getElementById("menu");
-      menu.classList.add("w-screen", "h-screen", "opactiy-95", "flex");
+      document.getElementById("navbar").classList.remove("flex", "mt-2");
+      document.getElementById("navbar").classList.add("hidden");
+      menu.classList.add("w-screen", "min-h-screen", "opactiy-95", "flex");
       menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
     }
     setIsOpen(!isOpen);
@@ -27,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="flex flex-row flex-wrap px-4 sm:px-8 md:px-12 py-6 md:items-center justify-between shadow-md lg:shadow-xl rounded-md sm:rounded-lg lg:rounded-xl mx-2 sm:mx-6 lg:mx-20 text-gray-700 bg-gray-200 dark:bg-gray-800 mt-2 md:mt-0 overf"
+        className="flex flex-row flex-wrap px-4 sm:px-8 md:px-12 py-6 md:items-center justify-between shadow-md lg:shadow-xl rounded-md sm:rounded-lg lg:rounded-xl mx-2 sm:mx-6 lg:mx-20 text-gray-700 bg-gray-200 dark:bg-gray-800 mt-2 md:mt-0"
         id="navbar"
       >
         <div className="flex">
@@ -149,6 +151,18 @@ const Navbar = () => {
             href="/"
           >
             <Toggle />
+          </div>
+          <div
+            className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
+            href="/"
+          >
+            <button className="mx-3" onClick={toggleMenu}>
+              <i
+                className={`fas ${
+                  isOpen ? "fa-times-square" : "fa-stream"
+                } fa-lg fa-fw sm:p-3 py-3 text-blueDeep`}
+              ></i>
+            </button>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
 // import Logo from "../Assets/Logo.png";
+import picture1 from "../Assets/images/pexels-vladislav-murashko-5990737.jpg";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
 
@@ -42,54 +43,51 @@ function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Define an array of objects to store the pictures and texts that you want to display
   const picturesAndTexts = [
     {
-      picture: "../Assets/images/picture-1.jpg",
+      picture:
+        "/static/media/pexels-yuri-manei-2690323.190932c4f5270a2c3960.jpg",
       name: "Sarah Smith",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
     {
-      picture: "picture2.jpg",
+      picture:
+        "/static/media/pexels-vladislav-murashko-5990737.684912be4232d5f06cab.jpg",
       name: "John Doe",
-      text: "Text for picture 2",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
     {
-      picture: "picture3.jpg",
+      picture:
+        "/static/media/pexels-yuri-manei-2690323.190932c4f5270a2c3960.jpg",
       name: "Jane Doe",
-      text: "Text for picture 3",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
     {
-      picture: "picture4.jpg",
+      picture:
+        "/static/media/pexels-vladislav-murashko-5990737.684912be4232d5f06cab.jpg",
       name: "John Smith",
-      text: "Text for picture 4",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
     {
-      picture: "picture5.jpg",
+      picture: picture1,
       name: "Jane Smith",
-      text: "Text for picture 5",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
   ];
 
-  // Define a function to go to the previous picture and text
   const goToPrev = () => {
-    // Decrement the current index, unless it's already at the first item, in which case we set it to the last item
     setCurrentIndex(
       currentIndex === 0 ? picturesAndTexts.length - 1 : currentIndex - 1
     );
   };
 
-  // Define a function to go to the next picture and text
   const goToNext = () => {
-    // Increment the current index, unless it's already at the last item, in which case we set it to the first item
     setCurrentIndex(
       currentIndex === picturesAndTexts.length - 1 ? 0 : currentIndex + 1
     );
   };
 
-  // Get the current picture and text based on the current index
   const { picture, name, text } = picturesAndTexts[currentIndex];
-  console.log(picture);
 
   return (
     <>
@@ -138,7 +136,7 @@ function Home() {
           }`}
         >
           <section
-            className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center overflow-x-auto over container-snap scrolling-wrapper"
+            className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center overflow-x-auto over container-snap scrolling-wrapper py-24 md:py-0"
             id="container"
             ref={scrollRef}
           >
@@ -301,11 +299,15 @@ function Home() {
                   What People have to say
                 </p>
               </div>
-              <div className="flex flex-col md:flex-row xl:mx-auto mt-20 p-5 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center xl:w-[1000px] lg:w-[800px] md:[600px]">
-                <div className="w-full md:w-1/3 p-4">
-                  <img src={picture} alt={name} />
+              <div className="flex flex-col md:flex-row xl:mx-auto mt-20 mx-5 sm:p-6 md:p-12 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl justify-center xl:w-[1000px] lg:w-[800px] md:[600px]">
+                <div className="w-full md:w-1/3 p-6">
+                  <img
+                    src={picture}
+                    alt={name}
+                    className="rounded-xl w-[450px] shadow-lg"
+                  />
                 </div>
-                <div className="w-full md:w-2/3 p-4 flex flex-col justify-center">
+                <div className="w-full md:w-2/3 flex flex-col justify-center p-8">
                   <h2 className="text-blueDeep text-medium text-xl md:text-3xl font-raleway">
                     {name}
                   </h2>
@@ -314,23 +316,21 @@ function Home() {
                   </p>
                 </div>
               </div>
-              <div className="mx-auto mt-20 flex flex-row items-center justify-center">
-                <a
-                  href="/"
-                  className="inline-flex items-center px-6 py-3 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 hover:scale-110  dark:hover:bg-gray-700 dark:hover:text-white"
+              <div className="mx-auto mt-20 flex flex-row items-center justify-center font-raleway">
+                <p
+                  className="inline-flex cursor-pointer items-center px-6 md:px-8 lg:px-12 text-center py-3 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 hover:scale-110  dark:hover:bg-gray-700 dark:hover:text-white"
                   onClick={goToPrev}
                 >
                   <i className="fas fa-arrow-left fa-lg fa-fw"></i>
-                  Back
-                </a>
-                <a
-                  href="/"
-                  className="inline-flex items-center px-6 py-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 hover:scale-110 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  <span className="pl-2">Back</span>
+                </p>
+                <p
+                  className="inline-flex cursor-pointer items-center px-6 md:px-8 lg:px-12 text-center py-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 hover:scale-110 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                   onClick={goToNext}
                 >
                   Next
-                  <i className="fas fa-arrow-right fa-lg fa-fw"></i>
-                </a>
+                  <i className="fas fa-arrow-right fa-lg fa-fw px-2"></i>
+                </p>
               </div>
             </div>
           </section>

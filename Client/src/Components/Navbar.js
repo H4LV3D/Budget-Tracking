@@ -8,14 +8,10 @@ const Navbar = () => {
   function menuToggle() {
     if (isOpen) {
       let menu = document.getElementById("menu");
-      document.getElementById("navbar").classList.remove("hidden");
-      document.getElementById("navbar").classList.add("flex", "mt-2");
       menu.classList.add("w-0", "h-0", "opacity-0", "hidden");
       menu.classList.remove("w-screen", "min-h-screen", "opacity-95", "flex");
     } else {
       var menu = document.getElementById("menu");
-      document.getElementById("navbar").classList.remove("flex", "mt-2");
-      document.getElementById("navbar").classList.add("hidden");
       menu.classList.add("w-screen", "min-h-screen", "opactiy-95", "flex");
       menu.classList.remove("w-0", "h-0", "opacity-0", "hidden");
     }
@@ -50,7 +46,7 @@ const Navbar = () => {
                 About Us
               </p>
             </Link>
-            <Link to="/">
+            <Link to="/budgets">
               <p className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200">
                 Budgets
               </p>
@@ -121,9 +117,9 @@ const Navbar = () => {
               About Us
             </p>
           </Link>
-          <Link to="/">
+          <Link to="/budgets">
             <p className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300">
-              Projects
+              Budgets
             </p>
           </Link>
           <Link to="/">
@@ -152,7 +148,7 @@ const Navbar = () => {
           >
             <Toggle />
           </div>
-          <div
+          {/* <div
             className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
             href="/"
           >
@@ -163,7 +159,7 @@ const Navbar = () => {
                 } fa-lg fa-fw sm:p-3 py-3 text-blueDeep`}
               ></i>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

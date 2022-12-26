@@ -40,19 +40,19 @@ function Footer() {
                     </p>
                   </div>
                   <div className="mt-8 mb-6 hidden lg:flex flex-row ">
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
                       About
                     </p>
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
                       Contact
                     </p>
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
                       Login
                     </p>
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
                       Sign Up
                     </p>
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:text-white">
+                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
                       Read more...
                     </p>
                   </div>
@@ -81,7 +81,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <hr className="w-full   dark:bg-white" />
+            <hr className="w-full" />
             <div className="flex flex-col sm:flex-row mt-6">
               <div className="w-full md:w-1/2 mb-3 sm:my-0">
                 <p className="flex items-center text-md font-raleway font-medium text-black dark:text-gray-400">

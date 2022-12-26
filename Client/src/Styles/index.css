@@ -103,7 +103,7 @@ input:checked + .slideBtnTg:before {
 
 hr {
   background-color: #5992c7 !important;
-  height: 2px;
+  /* height: 2px; */
 }
 
 input:-webkit-autofill,

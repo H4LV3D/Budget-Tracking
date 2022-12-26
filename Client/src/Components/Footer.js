@@ -59,22 +59,22 @@ function Footer() {
                 </div>
                 <div className="w-1/4 hidden lg:block">
                   <ul className=" mt-20 list-none hover:list-inside">
-                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep my-4">
+                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep hover:dark:text-blueDeep cursor-pointer my-4">
                       Terms and Conditions
                     </li>
-                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep my-4">
+                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep hover:dark:text-blueDeep cursor-pointer my-4">
                       FAQ's
                     </li>
-                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep my-4">
+                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep hover:dark:text-blueDeep cursor-pointer my-4">
                       Tracking
                     </li>
-                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep my-4">
+                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep hover:dark:text-blueDeep cursor-pointer my-4">
                       Budgeting
                     </li>
-                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep my-4">
+                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep hover:dark:text-blueDeep cursor-pointer my-4">
                       Transactions
                     </li>
-                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep my-4">
+                    <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep hover:dark:text-blueDeep cursor-pointer my-4">
                       Billings
                     </li>
                   </ul>
@@ -87,8 +87,10 @@ function Footer() {
                 <p className="flex items-center text-md font-raleway font-medium text-black dark:text-gray-400">
                   <i className="fas fa-copyright fa-md fa-fw"></i>
                   Copywright 2022.
-                  <span className="hidden md:block">CoinSave Inc.</span>
-                  <span className="hidden lg:block">All Rights Reserved</span>
+                  <span className="hidden lg:block px-2">
+                    All Rights Reserved
+                  </span>
+                  <span className="hidden md:block"> CoinSave Inc. </span>
                 </p>
               </div>
               <div className="hidden sm:flex w-full sm:w-1/2 flex-row items-center sm:justify-end">

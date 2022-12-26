@@ -247,7 +247,7 @@ function Home() {
               </p>
 
               <button className="bg-blueDeep text-center py-3 ps-6 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
-                Save Now!
+                Start Saving!
               </button>
             </div>
           </section>
@@ -279,7 +279,7 @@ function Home() {
                 cumque unde hic porro dolores veritatis quos.
               </p>
               <button className="border border-blueDeep text-blueDeep dark:bg-blueDeep dark:text-gray-200  text-center py-3 ps-6 sm:px-10 mr-3 text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
-                Save Now!
+                Find the Money Trail!
               </button>
             </div>
           </section>

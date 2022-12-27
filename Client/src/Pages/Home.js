@@ -266,7 +266,7 @@ function Home() {
                 </p>
               </div>
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-black text-blueDeep dark:text-white mb-12">
-                Tracking at <br className="hidden sm:block" /> your tips.
+                Tracking at <br className="hidden md:block" /> your tips.
               </h2>
               <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-2/3 leading-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio

@@ -6,9 +6,9 @@ function Footer() {
       <footer className="w-full">
         <section className="bg-gray-200 dark:bg-gray-700 w-full flex items-center sm:my-0">
           <div className="container sm:mx-auto px-6 sm:px-12 my-20 flex flex-col justify-center">
-            <div className="mt-10 mb-4">
+            <div className="mt-10 mb-2">
               <div className="flex flex-row">
-                <div className="w-full lg:w-3/4">
+                <div className="w-full md:w-3/4 lg:w-2/4">
                   <h2 className="font-sans text-3xl text-blueDeep font-bold mb-4">
                     <i className="fab fa-bitcoin fa-1x fa-fw"></i>
                     Coin
@@ -16,22 +16,28 @@ function Footer() {
                       Save
                     </span>
                   </h2>
-
                   <p className="font-raleway font-medium text-xl text-blueDeep dark:text-gray-200">
                     Save. Spend. Invest. Repeat.
                   </p>
-                  <p className="w-full md:w-3/4 lg:w-2/3 my-6 text-grat-800 dark:text-gray-400 font-raleway font-light text-base leading-7">
+                  <p className="w-full md:w-3/4 lg:w-2/3 my-6 text-gray-800 dark:text-gray-400 font-raleway font-light text-base leading-7">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio quaerat cumque unde hic porro dolores veritatis quos,
-                    doloribus soluta nisi ea unde hic porro dolores veritatis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio quaerat cumque unde hic porro dolores veritatis
+                    quos,Optio quaerat cumque unde .Optio quaerat cumque unde
                   </p>
-                  <p className="md:hidden font-raleway font-medium text-xl text-blueDeep dark:text-gray-200 mt-4 mb-12">
+
+                  <div className="md:hidden md:mt-12 my-4 font-raleway font-medium text-xl text-blueDeep dark:text-gray-200 mb-6">
                     Contact <br />
-                    <span className="text-md text-gray-800  dark:text-gray-300 font-light">
+                    <p className="text-base text-gray-800  dark:text-gray-400 font-light my-4">
                       contact@coinsave.com
-                    </span>
-                  </p>
+                    </p>
+                    <p className="text-base text-gray-800  dark:text-gray-400 font-light my-4">
+                      hello@coinsave.com
+                    </p>
+                    <p className="text-base text-gray-800  dark:text-gray-400 font-light my-4">
+                      +1 (208) 7308 4236
+                    </p>
+                  </div>
+
                   <div className="sm:hidden w-full sm:w-1/2 flex flex-row items-center sm:justify-end">
                     <p className="flex">
                       <i className="fab fa-instagram fa-2x fa-fw mx-2 hover:text-blueDeep dark:text-blueDeep"></i>
@@ -53,12 +59,26 @@ function Footer() {
                       Sign Up
                     </p>
                     <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
-                      Read more...
+                      Downloads
+                    </p>
+                  </div>
+                </div>
+                <div className="w-1/4 hidden md:block">
+                  <div className="mt-12 font-raleway font-medium text-xl text-blueDeep dark:text-gray-200 mb-6">
+                    Contact <br />
+                    <p className="text-base text-gray-800  dark:text-gray-400 font-light my-4">
+                      contact@coinsave.com
+                    </p>
+                    <p className="text-base text-gray-800  dark:text-gray-400 font-light my-4">
+                      hello@coinsave.com
+                    </p>
+                    <p className="text-base text-gray-800  dark:text-gray-400 font-light my-4">
+                      +1 (208) 7308 4236
                     </p>
                   </div>
                 </div>
                 <div className="w-1/4 hidden lg:block">
-                  <ul className=" mt-20 list-none hover:list-inside">
+                  <ul className="mt-12 list-none hover:list-inside">
                     <li className="font-raleway font-medium text-black dark:text-gray-400 text-lg hover:text-blueDeep hover:dark:text-blueDeep cursor-pointer my-4">
                       Terms and Conditions
                     </li>

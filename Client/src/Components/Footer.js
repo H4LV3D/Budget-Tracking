@@ -86,11 +86,9 @@ function Footer() {
               <div className="w-full md:w-1/2 mb-3 sm:my-0">
                 <p className="flex items-center text-md font-raleway font-medium text-black dark:text-gray-400">
                   <i className="fas fa-copyright fa-md fa-fw"></i>
-                  Copywright 2022.
-                  <span className="hidden lg:block px-2">
-                    All Rights Reserved
-                  </span>
-                  <span className="hidden md:block"> CoinSave Inc. </span>
+                  2022
+                  <span className="hidden md:block px-2"> CoinSave Inc. </span>
+                  <span className="hidden lg:block ">All Rights Reserved</span>
                 </p>
               </div>
               <div className="hidden sm:flex w-full sm:w-1/2 flex-row items-center sm:justify-end">

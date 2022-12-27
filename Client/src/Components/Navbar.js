@@ -58,7 +58,7 @@ const Navbar = () => {
             </Link>
             <Link to="/dashboard">
               <p className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200">
-                Dashboard
+                Downloads
               </p>
             </Link>
           </nav>
@@ -85,14 +85,14 @@ const Navbar = () => {
           <Toggle />
           <div className="hidden lg:block ml-6">
             <nav className=" md:flex flex-wrap items-center justify-center text-base font-raleway">
-              <Link to="/login">
-                <p className="mr-3 md:mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200">
-                  Sign In
-                </p>
-              </Link>
               <Link to="/register">
                 <p className="mr-3 md:mr-5 text-md font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200">
                   Register
+                </p>
+              </Link>
+              <Link to="/login">
+                <p className="mr-3 md:mr-5 text-md font-semibold border border-blueDeep px-4 py-2 dark:text-white rounded-md text-blueDeep hover:bg-blueDeep hover:text-white hover:font-black transition ease-in-out duration-200">
+                  Sign In
                 </p>
               </Link>
             </nav>

@@ -115,13 +115,13 @@ function Home() {
               </p>
               <div className="flex flex-col md:flex-row  w-full px-10 justify-center">
                 <Link to="/dashboard">
-                  <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[360px] hover:scale-110">
-                    Start Budgeting
+                  <button className="bg-blueDeep text-center py-4 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[300px] hover:scale-110">
+                    Start A Budget!
                   </button>
                 </Link>
                 <Link to="/dashboard">
-                  <button className="border border-blueDeep text-blueDeep text-center py-3 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[360px] hover:bg-blueDeep hover:text-black hover:scale-90">
-                    Finance Tracking
+                  <button className="hover:border hover:border-blueDeep text-blueDeep text-center py-4 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[300px]  hover:scale-75">
+                    Track your Finances
                   </button>
                 </Link>
               </div>
@@ -147,11 +147,10 @@ function Home() {
                 </h1>
               </div>
 
-              <div className="ml-12 mr-2  p-6 bg-black rounded-xl h-1/4">
-                <i className="fa-solid fa-money-bill-1 fa-4x fa-fw text-white px-auto"></i>
-              </div>
-
               <div className="ml-6 mr-12 p-12 flex flex-col bg-black rounded-xl shadow-xl w-[360px] flex-shrink-0">
+                <span className="w-1/4 p-3 rounded-lg bg-gray-300 shadow-lg">
+                  <i className="fa-solid fa-money-bill-1 fa-2x fa-fw text-gray-800 px-auto"></i>
+                </span>
                 <h2 className="text-2xl font-archivo font-bold md:font-black text-white dark:text-white mb-2">
                   Proper <br /> Money Management
                 </h2>
@@ -163,9 +162,7 @@ function Home() {
                   quaerat cumque unde hic porro dolores veritatis quos,
                   doloribus soluta nisi ea unde hic porro dolores
                   veritatis.Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Optio quaerat cumque unde hic porro dolores veritatis
-                  quos, doloribus soluta nisi ea unde hic porro dolores
-                  veritatis.
+                  elit.
                 </p>
                 <button className="bg-white py-3 px-5 sm:px-12 mr-3 text-black text-lg rounded-lg mt-5">
                   Budget Now
@@ -178,7 +175,7 @@ function Home() {
 
               <div className="ml-6 mr-12 p-12 flex flex-col flex-shrink-0 bg-blueDeep rounded-xl shadow-xl w-[360px]">
                 <h2 className="text-2xl font-archivo font-bold md:font-black text-white dark:text-white mb-2">
-                  Proper <br /> Money Management
+                  Easy <br /> Money Management
                 </h2>
                 <p className="font-raleway font-medium text-xl text-white dark:text-gray-200">
                   why Save?
@@ -233,7 +230,7 @@ function Home() {
         >
           <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 sm:px-12 py-20 flex flex-col">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-light text-blueDeep dark:text-white mb-8">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-sans font-light text-blueDeep dark:text-white mb-8">
                 Spend Less, <br />
                 <span className="font-black text-blueDeep text-6xl sm:text-7xl md:text-6xl lg:text-9xl">
                   Save More.
@@ -261,7 +258,7 @@ function Home() {
         >
           <section className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center py-24 sm:py-0">
             <div className="md:w-1/2 md:min-h-screen"></div>
-            <div className="md:w-1/2 sm:w-2/3 sm:mx-auto px-6 sm:px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
+            <div className="md:w-1/2 px-6 sm:px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
               <div className="flex items-center mb-4">
                 <hr className="hidden sm:block w-1/4 bg-gray-800 dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 sm:pl-4">

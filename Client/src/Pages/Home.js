@@ -106,9 +106,9 @@ function Home() {
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
-                <div className="col-12 md:w-[450px] md:h-[550px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 overflow-hidden">
+                <div className="col-12 md:w-[450px] md:h-[580px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-300 overflow-hidden">
                   <div className="row flex">
-                    <div className="col-6 w-1/2 flex flex-row items-center justify-between p-4 bg-gray-200">
+                    <div className="col-6 w-1/2 flex flex-row items-center justify-between p-4 bg-gray-200 dark:bg-gray-700">
                       <div className="icon">
                         <i class="fas fa-coins fa-lg fa-fw"></i>
                       </div>
@@ -146,13 +146,31 @@ function Home() {
                       id=""
                     />
                     <div className="mid mt-4">
-                      <p className="font-raleway"> Frequency</p>
-                      <select name="" className="rounded-md py-3 px-5" id="">
-                        <option value="Daily">Daily</option>
+                      <p className="font-raleway text-gray-800 dark:text-gray-300">
+                        Frequency
+                      </p>
+                      <select name="" className="rounded-md py-3 px-8" id="">
+                        <option value="Daily" className="px-4">
+                          Daily
+                        </option>
                         <option value="Daily">Weekly</option>
                         <option value="Daily">Monthly</option>
                         <option value="Daily">Yearly</option>
                       </select>
+                      <button className="mt-24 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 bg-blueDeep">
+                        Start Now!
+                      </button>
+                      <div className="py-6 px-8 text-center">
+                        <small className="font-raleway font-light text-gray-400 text-center">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Et, vel. Culpa fugit blanditiis nisi fuga non
+                          atque provident similique consequatur quo.
+                        </small>
+                      </div>
+                      <div className="py-4 px-8 text-center">
+                        <span className="circle bg-gray-500"> hello</span>
+                        <span className="w-[18px] h-[18px] rounded-xl mr-2 bg-gray-800"></span>
+                      </div>
                     </div>
                   </div>
                 </div>

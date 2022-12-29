@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
-// import Logo from "../Assets/Logo.png";
-import picture1 from "../Assets/images/pexels-vladislav-murashko-5990737.jpg";
+import picture1 from "../Assets/images/picture1.jpg";
+import picture2 from "../Assets/images/picture2.jpg";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
 
@@ -40,31 +40,25 @@ function Home() {
     return elRef;
   }
   const scrollRef = useHorizontalScroll();
-
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const picturesAndTexts = [
     {
-      picture:
-        "/static/media/pexels-yuri-manei-2690323.190932c4f5270a2c3960.jpg",
+      picture: picture1,
       name: "Sarah Smith",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
     {
-      picture:
-        "/static/media/pexels-vladislav-murashko-5990737.684912be4232d5f06cab.jpg",
+      picture: picture2,
       name: "John Doe",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
     {
-      picture:
-        "/static/media/pexels-yuri-manei-2690323.190932c4f5270a2c3960.jpg",
+      picture: picture1,
       name: "Jane Doe",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
     {
-      picture:
-        "/static/media/pexels-vladislav-murashko-5990737.684912be4232d5f06cab.jpg",
+      picture: picture2,
       name: "John Smith",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
@@ -74,13 +68,11 @@ function Home() {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat cumque unde hic porro dolores veritatis quos,doloribus soluta nisi ea unde hic porro dolores veritatis.",
     },
   ];
-
   const goToPrev = () => {
     setCurrentIndex(
       currentIndex === 0 ? picturesAndTexts.length - 1 : currentIndex - 1
     );
   };
-
   const goToNext = () => {
     setCurrentIndex(
       currentIndex === picturesAndTexts.length - 1 ? 0 : currentIndex + 1
@@ -101,7 +93,7 @@ function Home() {
           }`}
         >
           <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center py-24 sm:py-0">
-            <div className="container mx-auto px-6 sm:px-12 py-20 flex flex-col items-center justify-center">
+            <div className="container mx-auto px-6 sm:px-12 py-20 flex flex-col items-center justify-center pt-12 sm:pt-24 lg:mt-48">
               <h2 className="text-6xl sm:text-8xl md:text-8xl lg:text-9xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
                 Follow <br /> <span className="text-blueDeep">The</span> Money!
               </h2>
@@ -113,8 +105,58 @@ function Home() {
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
-              <div className="flex flex-col md:flex-row  w-full px-10 justify-center">
-                <Link to="/dashboard">
+              <div className="flex flex-col md:flex-row w-full justify-center">
+                <div className="col-12 md:w-[450px] md:h-[550px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 overflow-hidden">
+                  <div className="row flex">
+                    <div className="col-6 w-1/2 flex flex-row items-center justify-between p-4 bg-gray-200">
+                      <div className="icon">
+                        <i class="fas fa-coins fa-lg fa-fw"></i>
+                      </div>
+                      <div className="text">
+                        <h6 className="font-sans">Savings</h6>
+                        <p className="font-raleway">Start a new plan</p>
+                      </div>
+                      <div className="input">
+                        <input type="radio" name="select" id="" checked />
+                      </div>
+                    </div>
+                    <div className="col-6 w-1/2 flex flex-row items-center justify-between p-4 ">
+                      <div className="icon">
+                        <i class="fas fa-coins fa-lg fa-fw"></i>
+                      </div>
+                      <div className="text">
+                        <h6 className="font-sans">Budget</h6>
+                        <p className="font-raleway">Start a new plan</p>
+                      </div>
+                      <div className="input">
+                        <input type="radio" name="select" id="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row py-8 p-6">
+                    <h4 className="font-sans font-bold text-4xl pb-2 text-blueDeep">
+                      $200
+                    </h4>
+                    <input
+                      type="range"
+                      name="price"
+                      className="w-full"
+                      min="200"
+                      max="5000"
+                      id=""
+                    />
+                    <div className="mid mt-4">
+                      <p className="font-raleway"> Frequency</p>
+                      <select name="" className="rounded-md py-3 px-5" id="">
+                        <option value="Daily">Daily</option>
+                        <option value="Daily">Weekly</option>
+                        <option value="Daily">Monthly</option>
+                        <option value="Daily">Yearly</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                {/* <Link to="/dashboard">
                   <button className="bg-blueDeep text-center py-4 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[300px] hover:scale-110">
                     Start A Budget!
                   </button>
@@ -123,7 +165,7 @@ function Home() {
                   <button className="hover:border hover:border-blueDeep text-blueDeep text-center py-4 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[300px]  hover:scale-75">
                     Track your Finances
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </section>
@@ -291,7 +333,7 @@ function Home() {
           <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex justify-center mx-auto py-24 sm:py-0">
             <div className="container mx-auto md:px-12 my-auto">
               <div className="flex items-center mb-12">
-                <hr className="hidden sm:block w-1/5  bg-gray-800 dark:bg-white" />
+                <hr className="hidden sm:block w-1/5  bg-gray-800 dark:bg-blueDeep" />
                 <p className="font-raleway text-center font-medium text-2xl md:text-3xl text-blueDeep dark:text-gray-200 pl-4">
                   What People have to say
                 </p>

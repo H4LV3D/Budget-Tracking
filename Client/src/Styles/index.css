@@ -164,9 +164,8 @@ input[type="radio"] {
   height: 20px;
 }
 
-.circle {
+#circle {
+  width: 10px !important;
+  height: 10px !important;
   border-radius: 50% !important;
-  width: 300px !important;
-  height: 300px !important;
-  background-color: #5992c7 !important;
 }

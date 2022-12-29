@@ -133,7 +133,7 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="row py-8 p-6">
+                  <div className="row py-8 px-12">
                     <h4 className="font-sans font-bold text-4xl pb-2 text-blueDeep">
                       $200
                     </h4>
@@ -149,7 +149,11 @@ function Home() {
                       <p className="font-raleway text-gray-800 dark:text-gray-300">
                         Frequency
                       </p>
-                      <select name="" className="rounded-md py-3 px-8" id="">
+                      <select
+                        name=""
+                        className="rounded-md py-3 px-8 dark:bg-gray-700"
+                        id=""
+                      >
                         <option value="Daily" className="px-4">
                           Daily
                         </option>
@@ -160,16 +164,16 @@ function Home() {
                       <button className="mt-24 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 bg-blueDeep">
                         Start Now!
                       </button>
-                      <div className="py-6 px-8 text-center">
+                      <div className="py-6 text-center">
                         <small className="font-raleway font-light text-gray-400 text-center">
                           Lorem ipsum dolor sit amet consectetur, adipisicing
                           elit. Et, vel. Culpa fugit blanditiis nisi fuga non
                           atque provident similique consequatur quo.
                         </small>
                       </div>
-                      <div className="py-4 px-8 text-center">
-                        <span className="circle bg-gray-500"> hello</span>
-                        <span className="w-[18px] h-[18px] rounded-xl mr-2 bg-gray-800"></span>
+                      <div className="py-2 px-8 flex items-center justify-center mx-auto">
+                        <div id="circle" className="mr-2 bg-blueDeep"></div>
+                        <div id="circle" className="bg-gray-500"></div>
                       </div>
                     </div>
                   </div>

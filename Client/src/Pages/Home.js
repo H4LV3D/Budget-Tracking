@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar";
 import picture1 from "../Assets/images/picture1.jpg";
 import picture2 from "../Assets/images/picture2.jpg";
 import Footer from "../Components/Footer";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Home() {
   const darkToggle = false;
@@ -81,6 +81,12 @@ function Home() {
 
   const { picture, name, text } = picturesAndTexts[currentIndex];
 
+  function displayRange() {
+    let range = document.getElementById("priceRange");
+    let display = document.getElementById("displayPriceRange");
+    display.innerText = "$" + range.value;
+  }
+
   return (
     <>
       <header className="fixed w-full pt-2 top-0 z-50 text-gray-700">
@@ -106,7 +112,7 @@ function Home() {
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
-                <div className="col-12 md:w-[450px] md:h-[580px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-300 overflow-hidden">
+                <div className="col-12 md:w-[450px] md:h-[580px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-400 overflow-hidden mb-12">
                   <div className="row flex">
                     <div className="col-6 w-1/2 flex flex-row items-center justify-between p-4 bg-gray-200 dark:bg-gray-700">
                       <div className="icon">
@@ -134,7 +140,10 @@ function Home() {
                     </div>
                   </div>
                   <div className="row py-8 px-12">
-                    <h4 className="font-sans font-bold text-4xl pb-2 text-blueDeep">
+                    <h4
+                      className="font-sans font-bold text-4xl pb-2 text-blueDeep dark:text-white"
+                      id="displayPriceRange"
+                    >
                       $200
                     </h4>
                     <input
@@ -143,15 +152,17 @@ function Home() {
                       className="w-full"
                       min="200"
                       max="5000"
-                      id=""
+                      id="priceRange"
+                      step="50"
+                      onChange={displayRange}
                     />
                     <div className="mid mt-4">
                       <p className="font-raleway text-gray-800 dark:text-gray-300">
                         Frequency
                       </p>
                       <select
-                        name=""
-                        className="rounded-md py-3 px-8 dark:bg-gray-700"
+                        name="frequency"
+                        className="rounded-md py-3 px-8 text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700"
                         id=""
                       >
                         <option value="Daily" className="px-4">
@@ -161,7 +172,7 @@ function Home() {
                         <option value="Daily">Monthly</option>
                         <option value="Daily">Yearly</option>
                       </select>
-                      <button className="mt-24 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 bg-blueDeep">
+                      <button className="mt-24 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 text-gray-100 bg-blueDeep">
                         Start Now!
                       </button>
                       <div className="py-6 text-center">
@@ -178,16 +189,6 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                {/* <Link to="/dashboard">
-                  <button className="bg-blueDeep text-center py-4 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[300px] hover:scale-110">
-                    Start A Budget!
-                  </button>
-                </Link>
-                <Link to="/dashboard">
-                  <button className="hover:border hover:border-blueDeep text-blueDeep text-center py-4 px-5 sm:px-10 text-lg rounded-lg mb-3 w-full md:w-[300px]  hover:scale-75">
-                    Track your Finances
-                  </button>
-                </Link> */}
               </div>
             </div>
           </section>

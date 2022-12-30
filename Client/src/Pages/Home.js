@@ -90,6 +90,8 @@ function Home() {
   const [checked, setChecked] = useState(true);
 
   function switchBudgetTab() {
+    let budgetTab = document.getElementById("budget");
+    let savingsTab = document.getElementById("savings");
     if (checked) {
       document.getElementById("budgetRadio").checked = false;
       document.getElementById("savingsRadio").checked = true;
@@ -107,9 +109,6 @@ function Home() {
         .getElementById("savingsTab")
         .classList.remove("bg-gray-200", "dark:bg-gray-700");
     }
-    let budgetTab = document.getElementById("budget");
-    let savingsTab = document.getElementById("savings");
-
     budgetTab.classList.toggle("hidden");
     savingsTab.classList.toggle("hidden");
 

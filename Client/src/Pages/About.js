@@ -111,7 +111,7 @@ function About() {
           <div className="container mx-auto my-auto p-3">
             <div className="flex flex-col justify-center w-full my-20 mx-auto px-10 py-14 lg:p-16 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl max-w-screen-xl">
               <div className="flex justify-center md:justify-start items-center mb-12">
-                <hr className="hidden md:block w-1/5 bg-gray-800 dark:bg-white" />
+                <hr className="hidden md:block w-1/6 bg-blueDeep dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-2xl md:text-3xl text-blueDeep dark:text-gray-200 pl-4">
                   What Save with us?
                 </p>

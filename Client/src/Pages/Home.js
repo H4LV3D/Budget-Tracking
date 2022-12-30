@@ -87,6 +87,36 @@ function Home() {
     display.innerText = "$" + range.value;
   }
 
+  const [checked, setChecked] = useState(true);
+
+  function switchBudgetTab() {
+    if (checked) {
+      document.getElementById("budgetRadio").checked = false;
+      document.getElementById("savingsRadio").checked = true;
+      document
+        .getElementById("budgetTab")
+        .classList.remove("bg-gray-200", "dark:bg-gray-700");
+      document
+        .getElementById("savingsTab")
+        .classList.add("bg-gray-200", "dark:bg-gray-700");
+    } else {
+      document
+        .getElementById("budgetTab")
+        .classList.add("bg-gray-200", "dark:bg-gray-700");
+      document
+        .getElementById("savingsTab")
+        .classList.remove("bg-gray-200", "dark:bg-gray-700");
+    }
+    let budgetTab = document.getElementById("budget");
+    let savingsTab = document.getElementById("savings");
+
+    budgetTab.classList.toggle("hidden");
+    savingsTab.classList.toggle("hidden");
+
+    setChecked(!checked);
+  }
+  // switchBudgetTab();
+
   return (
     <>
       <header className="fixed w-full pt-2 top-0 z-50 text-gray-700">
@@ -103,10 +133,10 @@ function Home() {
               <h2 className="text-6xl sm:text-8xl md:text-8xl lg:text-9xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
                 Follow <br /> <span className="text-blueDeep">The</span> Money!
               </h2>
-              <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 mb-10">
+              <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200">
                 Save. Spend. Invest. Repeat.
               </p>
-              <p className="hidden text-grat-800 dark:text-gray-300 font-raleway font-light text-base text-center mx-auto w-full md:w-3/4 lg:w-1/2 my-5">
+              <p className=" text-gray-800 dark:text-gray-400 font-raleway font-light text-base text-center mx-auto w-full md:w-3/4 xl:w-1/2 my-5 mb-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
                 soluta nisi ea unde hic porro dolores veritatis.
@@ -114,74 +144,210 @@ function Home() {
               <div className="flex flex-col md:flex-row w-full justify-center">
                 <div className="col-12 md:w-[450px] md:h-[580px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-400 overflow-hidden mb-12">
                   <div className="row flex">
-                    <div className="col-6 w-1/2 flex flex-row items-center justify-between p-4 bg-gray-200 dark:bg-gray-700">
+                    <div
+                      className="col-6 w-1/2 flex flex-row items-center justify-between p-4 bg-gray-200 dark:bg-gray-700"
+                      id="savingsTab"
+                    >
                       <div className="icon">
                         <i class="fas fa-coins fa-lg fa-fw"></i>
                       </div>
-                      <div className="text">
-                        <h6 className="font-sans">Savings</h6>
-                        <p className="font-raleway">Start a new plan</p>
-                      </div>
+                      <label htmlFor="savingsRadio">
+                        <div className="text">
+                          <h6 className="font-sans">Savings</h6>
+                          <p className="font-raleway">Start a new plan</p>
+                        </div>
+                      </label>
                       <div className="input">
-                        <input type="radio" name="select" id="" checked />
+                        <input
+                          type="radio"
+                          name="Savings_radio"
+                          class="bg-blueDeep"
+                          id="savingsRadio"
+                          onChange={switchBudgetTab}
+                        />
                       </div>
                     </div>
-                    <div className="col-6 w-1/2 flex flex-row items-center justify-between p-4 ">
+                    <div
+                      className="col-6 w-1/2 flex flex-row items-center justify-between p-4 "
+                      id="budgetTab"
+                    >
                       <div className="icon">
                         <i class="fas fa-coins fa-lg fa-fw"></i>
                       </div>
-                      <div className="text">
-                        <h6 className="font-sans">Budget</h6>
-                        <p className="font-raleway">Start a new plan</p>
-                      </div>
+                      <label htmlFor="budgetRadio">
+                        <div className="text">
+                          <h6 className="font-sans">Budget</h6>
+                          <p className="font-raleway">Start a new plan</p>
+                        </div>
+                      </label>
                       <div className="input">
-                        <input type="radio" name="select" id="" />
+                        <input
+                          type="radio"
+                          name="Savings_radio"
+                          class="bg-blueDeep"
+                          id="budgetRadio"
+                          onChange={switchBudgetTab}
+                        />
                       </div>
                     </div>
                   </div>
-                  <div className="row py-8 px-12">
-                    <h4
-                      className="font-sans font-bold text-4xl pb-2 text-blueDeep dark:text-white"
-                      id="displayPriceRange"
-                    >
-                      $200
-                    </h4>
-                    <input
-                      type="range"
-                      name="price"
-                      className="w-full"
-                      min="200"
-                      max="5000"
-                      id="priceRange"
-                      step="50"
-                      onChange={displayRange}
-                    />
-                    <div className="mid mt-4">
-                      <p className="font-raleway text-gray-800 dark:text-gray-300">
-                        Frequency
-                      </p>
-                      <select
-                        name="frequency"
-                        className="rounded-md py-3 px-8 text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700"
-                        id=""
+                  <div className="row py-8 px-12 flex">
+                    <div className="left" id="savings">
+                      <h4
+                        className="font-sans font-bold text-4xl pb-2 text-blueDeep dark:text-white"
+                        id="displayPriceRange"
                       >
-                        <option value="Daily" className="px-4">
-                          Daily
-                        </option>
-                        <option value="Daily">Weekly</option>
-                        <option value="Daily">Monthly</option>
-                        <option value="Daily">Yearly</option>
-                      </select>
-                      <button className="mt-24 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 text-gray-100 bg-blueDeep">
-                        Start Now!
-                      </button>
-                      <div className="py-6 text-center">
-                        <small className="font-raleway font-light text-gray-400 text-center">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Et, vel. Culpa fugit blanditiis nisi fuga non
-                          atque provident similique consequatur quo.
-                        </small>
+                        $200
+                      </h4>
+                      <input
+                        type="range"
+                        name="price"
+                        min="200"
+                        max="5000"
+                        id="priceRange"
+                        step="50"
+                        onChange={displayRange}
+                        class="appearance-none w-full h-2 bg-blueDeep dark:bg-gray-700 rounded-md outline-none slider-thumb"
+                      />
+                      <small className="text-gray-500">
+                        Move the slider to adjust the amount
+                      </small>
+                      <div className="mid mt-4">
+                        <p className="font-raleway text-gray-800 dark:text-gray-300 mb-1">
+                          Frequency
+                        </p>
+
+                        <button
+                          id="dropdownDefault"
+                          data-dropdown-toggle="dropdown"
+                          class="font-raleway text-white bg-gray-300 hover:bg-gray-800 focus:outline-none font-medium rounded-lg text-sm px-4 py-3 text-center flex items-center justify-between dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 w-1/2"
+                          type="button"
+                        >
+                          <span>Daily</span>
+                          <i className="fas fa-chevron-down fa-sm fa-fw ml-7"></i>
+                        </button>
+
+                        <div
+                          id="dropdown"
+                          class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+                        >
+                          <ul
+                            class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownDefault"
+                          >
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Daily
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Weekly
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Monthly
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Quaterly
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <button className="mt-24 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 text-gray-100 bg-blueDeep">
+                          Start Now!
+                        </button>
+                        <div className="py-6 text-center">
+                          <small className="font-raleway font-light text-gray-400 text-center">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Et, vel. Culpa fugit blanditiis nisi fuga non
+                            atque provident similique consequatur quo.
+                          </small>
+                        </div>
                       </div>
+                    </div>
+                    <div className="hidden" id="budget">
+                      <h4
+                        className="font-sans font-bold text-4xl pb-2 text-blueDeep dark:text-white"
+                        id="displayPriceRange"
+                      >
+                        $200
+                      </h4>
+                      <input
+                        type="range"
+                        name="price"
+                        min="200"
+                        max="5000"
+                        id="priceRange"
+                        step="50"
+                        onChange={displayRange}
+                        class="appearance-none w-full h-2 bg-blueDeep dark:bg-gray-700 rounded-md outline-none slider-thumb"
+                      />
+                      <small className="text-gray-500">
+                        Move the slider to adjust the amount
+                      </small>
+                      <div className="mid mt-4">
+                        <p className="font-raleway text-gray-800 dark:text-gray-300 mb-1">
+                          Frequency
+                        </p>
+
+                        <button
+                          id="dropdownDefault"
+                          data-dropdown-toggle="dropdown"
+                          class="font-raleway text-white bg-gray-300 hover:bg-gray-800 focus:outline-none font-medium rounded-lg text-sm px-4 py-3 text-center flex items-center justify-between dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 w-1/2"
+                          type="button"
+                        >
+                          <span>Monthly</span>
+                          <i className="fas fa-chevron-down fa-sm fa-fw ml-7"></i>
+                        </button>
+
+                        <div
+                          id="dropdown"
+                          class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+                        >
+                          <ul
+                            class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownDefault"
+                          >
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Daily
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Weekly
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Monthly
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Quaterly
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <button className="mt-24 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 text-gray-100 bg-blueDeep">
+                          Start Now!
+                        </button>
+                        <div className="py-6 text-center">
+                          <small className="font-raleway font-light text-gray-400 text-center">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Et, vel. Culpa fugit blanditiis nisi fuga non
+                            atque provident similique consequatur quo.
+                          </small>
+                        </div>
+                      </div>
+
                       <div className="py-2 px-8 flex items-center justify-center mx-auto">
                         <div id="circle" className="mr-2 bg-blueDeep"></div>
                         <div id="circle" className="bg-gray-500"></div>

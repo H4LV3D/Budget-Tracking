@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,13 +10,15 @@ function Footer() {
             <div className="mt-10 mb-2">
               <div className="flex flex-row">
                 <div className="w-full md:w-3/4 lg:w-2/4">
-                  <h2 className="font-sans text-3xl text-blueDeep font-bold mb-4">
-                    <i className="fab fa-bitcoin fa-1x fa-fw"></i>
-                    Coin
-                    <span className="font-raleway text-black dark:text-white font-medium">
-                      Save
-                    </span>
-                  </h2>
+                  <Link to="/">
+                    <h2 className="font-sans text-3xl text-blueDeep font-bold mb-4">
+                      <i className="fab fa-bitcoin fa-1x fa-fw"></i>
+                      Coin
+                      <span className="font-raleway text-black dark:text-white font-medium">
+                        Save
+                      </span>
+                    </h2>
+                  </Link>
                   <p className="font-raleway font-medium text-xl text-blueDeep dark:text-gray-200">
                     Save. Spend. Invest. Repeat.
                   </p>
@@ -25,7 +28,7 @@ function Footer() {
                     quos,Optio quaerat cumque unde .Optio quaerat cumque unde
                   </p>
 
-                  <div className="md:hidden md:mt-12 my-4 font-raleway font-medium text-xl text-blueDeep dark:text-gray-200 mb-6">
+                  <div className="md:hidden mt-12 my-4 font-raleway font-medium text-xl text-blueDeep dark:text-gray-200 mb-6">
                     Contact <br />
                     <p className="text-base text-gray-800  dark:text-gray-400 font-light my-4">
                       contact@coinsave.com
@@ -46,21 +49,31 @@ function Footer() {
                     </p>
                   </div>
                   <div className="mt-8 mb-6 hidden lg:flex flex-row ">
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
-                      About
-                    </p>
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
-                      Contact
-                    </p>
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
-                      Login
-                    </p>
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
-                      Sign Up
-                    </p>
-                    <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
-                      Downloads
-                    </p>
+                    <Link to="/about">
+                      <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
+                        About Us
+                      </p>
+                    </Link>
+                    <Link to="/contact">
+                      <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
+                        Contact
+                      </p>
+                    </Link>
+                    <Link to="/login">
+                      <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
+                        Login
+                      </p>
+                    </Link>
+                    <Link to="/savings">
+                      <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
+                        Savings
+                      </p>
+                    </Link>
+                    <Link to="/downloads">
+                      <p className="font-raleway font-medium text-sm text-blueDeep dark:text-blueDeep border border-blueDeep py-3 px-5 mr-3 rounded-lg hover:bg-blueDeep hover:cursor-pointer hover:dark:text-gray-100 hover:text-gray-100">
+                        Downloads
+                      </p>
+                    </Link>
                   </div>
                 </div>
                 <div className="w-1/4 hidden md:block">

@@ -6,7 +6,8 @@ import About from "./Pages/About";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Dashboard from "./Pages/Dashboard";
-import Budget from "./Pages/budgets";
+import Budget from "./Pages/Budgets";
+import Downloads from "./Pages/Downloads";
 import { ThemeProvider } from "./Components/themeContext";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/budgets" element={<Budget />} />
+            <Route path="/download" element={<Downloads />} />
           </Routes>
         </Router>
       </ThemeProvider>

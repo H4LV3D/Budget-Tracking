@@ -56,7 +56,7 @@ const Navbar = () => {
                 Tracking
               </p>
             </Link>
-            <Link to="/dashboard">
+            <Link to="/download">
               <p className="mr-5 text-sm font-semibold text-gray-700 dark:text-white rounded-xl hover:text-blueDeep hover:text-lg hover:font-black transition ease-in-out duration-200">
                 Downloads
               </p>
@@ -127,9 +127,9 @@ const Navbar = () => {
               Plans
             </p>
           </Link>
-          <Link to="/dashboard">
+          <Link to="/download">
             <p className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300">
-              Dashboard
+              Downloads
             </p>
           </Link>
           <Link to="/login">
@@ -148,18 +148,6 @@ const Navbar = () => {
           >
             <Toggle />
           </div>
-          {/* <div
-            className="hover:text-amber-500 my-6 hover:text-blueDeep hover:text-4xl transistion ease-in-out duration-300"
-            href="/"
-          >
-            <button className="mx-3" onClick={toggleMenu}>
-              <i
-                className={`fas ${
-                  isOpen ? "fa-times-square" : "fa-stream"
-                } fa-lg fa-fw sm:p-3 py-3 text-blueDeep`}
-              ></i>
-            </button>
-          </div> */}
         </div>
       </div>
     </>

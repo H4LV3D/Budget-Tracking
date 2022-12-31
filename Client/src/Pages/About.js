@@ -24,13 +24,13 @@ function About() {
                 Save. Spend. Invest. Repeat.
               </p>
               <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-2/5 my-8">
-                We at Coin save linited aim ti help you make better financial
-                and analysis of the inflow and outflow of cash wwithin your
-                wallet and your financiual life and help you better predict your
-                next spending savinga and tracking Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Optio quaerat cumque unde hic
-                porro dolores veritatis quos, doloribus soluta nisi ea unde hic
-                porro dolores veritatis.
+                We at Coin save limited aim to help you make better financial
+                desicions and analysis of the inflow and outflow of cash wwithin
+                your wallet and your financiual life and help you better predict
+                your next spending, savings and tracking expenditure. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat
+                cumque unde hic porro dolores veritatis quos, doloribus soluta
+                nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row w-full">
                 <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[260px] hover:scale-75">

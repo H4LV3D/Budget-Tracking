@@ -93,21 +93,21 @@ function Home() {
     let budgetTab = document.getElementById("budget");
     let savingsTab = document.getElementById("savings");
     if (checked) {
-      // document.getElementById("budgetRadio").checked = checked;
       document.getElementById("savingsRadio").checked = checked;
       document
         .getElementById("budgetTab")
-        .classList.remove("bg-gray-200", "dark:bg-gray-700");
+        .classList.add("bg-gray-200", "dark:bg-gray-700");
       document
         .getElementById("savingsTab")
-        .classList.add("bg-gray-200", "dark:bg-gray-700");
+        .classList.remove("bg-gray-200", "dark:bg-gray-700");
+      document.getElementById("budgetRadio").checked = true;
     } else {
       document
         .getElementById("budgetTab")
-        .classList.add("bg-gray-200", "dark:bg-gray-700");
+        .classList.remove("bg-gray-200", "dark:bg-gray-700");
       document
         .getElementById("savingsTab")
-        .classList.remove("bg-gray-200", "dark:bg-gray-700");
+        .classList.add("bg-gray-200", "dark:bg-gray-700");
     }
     budgetTab.classList.toggle("hidden");
     savingsTab.classList.toggle("hidden");
@@ -141,10 +141,10 @@ function Home() {
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
-                <div className="col-12 md:w-[450px] md:h-[600px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-400 mb-12">
+                <div className="col-12 md:w-[450px] md:h-[600px] rounded-2xl shadow-2xl bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-400 mb-12">
                   <div className="row flex">
                     <div
-                      className="col-6 w-1/2 flex flex-row items-center justify-between p-4 bg-gray-200 dark:bg-gray-700"
+                      className="col-6 w-1/2 flex flex-row items-center justify-between p-4 rounded-tl-xl bg-gray-200 dark:bg-gray-700"
                       id="savingsTab"
                     >
                       <div className="icon">
@@ -168,7 +168,7 @@ function Home() {
                       </div>
                     </div>
                     <div
-                      className="col-6 w-1/2 flex flex-row items-center justify-between p-4 "
+                      className="col-6 w-1/2 flex flex-row items-center justify-between p-4 rounded-tr-xl"
                       id="budgetTab"
                     >
                       <div className="icon">
@@ -207,7 +207,7 @@ function Home() {
                         id="priceRange"
                         step="50"
                         onChange={displayRange}
-                        class="appearance-none w-full h-2 bg-blueDeep dark:bg-gray-700 rounded-md outline-none slider-thumb"
+                        class="appearance-none w-full h-2 bg-blueDeep dark:bg-gray-700 rounded-md outline-none slider-thumb accent-blueDeep"
                       />
                       <small className="text-gray-500">
                         Move the slider to adjust the amount
@@ -216,17 +216,15 @@ function Home() {
                         <p className="font-raleway text-gray-800 dark:text-gray-300 mb-1">
                           Frequency
                         </p>
-
                         <button
                           id="dropdownDefault"
                           data-dropdown-toggle="dropdown"
-                          class="font-raleway text-white bg-gray-300 hover:bg-gray-800 focus:outline-none font-medium rounded-lg text-sm px-4 py-3 text-center flex items-center justify-between dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 w-1/2"
+                          class="font-raleway text-gray-800 dark:text-white bg-gray-200 font-medium rounded-md text-sm px-4 py-3 text-center flex items-center justify-between dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 w-1/2"
                           type="button"
                         >
                           <span>Daily</span>
                           <i className="fas fa-chevron-down fa-sm fa-fw ml-7"></i>
                         </button>
-
                         <div
                           id="dropdown"
                           class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
@@ -260,11 +258,10 @@ function Home() {
                         <p className="font-raleway text-gray-800 dark:text-gray-300 mb-1 mt-3">
                           Duration
                         </p>
-
                         <button
                           id="dropdownDefault"
                           data-dropdown-toggle="dropdown"
-                          class="font-raleway text-white bg-gray-300 hover:bg-gray-800 focus:outline-none font-medium rounded-lg text-sm px-4 py-3 text-center flex items-center justify-between dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 w-1/2"
+                          class="font-raleway text-gray-800 dark:text-white bg-gray-200 font-medium rounded-md text-sm px-4 py-3 text-center flex items-center justify-between dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 w-1/2"
                           type="button"
                         >
                           <span>90 Days</span>
@@ -329,7 +326,7 @@ function Home() {
                         id="priceRange"
                         step="50"
                         onChange={displayRange}
-                        class="appearance-none w-full h-2 bg-blueDeep dark:bg-gray-700 rounded-md outline-none slider-thumb"
+                        class="appearance-none w-full h-2 bg-blueDeep dark:bg-gray-700 rounded-md outline-none slider-thumb accent-blueDeep"
                       />
                       <small className="text-gray-500">
                         Move the slider to adjust the amount
@@ -396,12 +393,6 @@ function Home() {
                         <div id="circle" className="mr-2 bg-blueDeep"></div>
                         <div id="circle" className="bg-gray-500"></div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="flex items-center justify-center">
-                      <div className="circle bg-blueDeep"></div>
-                      <div className="circle bg-blueDeep"></div>
                     </div>
                   </div>
                 </div>

@@ -93,8 +93,8 @@ function Home() {
     let budgetTab = document.getElementById("budget");
     let savingsTab = document.getElementById("savings");
     if (checked) {
-      document.getElementById("budgetRadio").checked = false;
-      document.getElementById("savingsRadio").checked = true;
+      // document.getElementById("budgetRadio").checked = checked;
+      document.getElementById("savingsRadio").checked = checked;
       document
         .getElementById("budgetTab")
         .classList.remove("bg-gray-200", "dark:bg-gray-700");
@@ -141,7 +141,7 @@ function Home() {
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
-                <div className="col-12 md:w-[450px] md:h-[580px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-400 overflow-hidden mb-12">
+                <div className="col-12 md:w-[450px] md:h-[600px] rounded-xl shadow-2xl bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-400 mb-12">
                   <div className="row flex">
                     <div
                       className="col-6 w-1/2 flex flex-row items-center justify-between p-4 bg-gray-200 dark:bg-gray-700"
@@ -162,6 +162,7 @@ function Home() {
                           name="Savings_radio"
                           class="bg-blueDeep"
                           id="savingsRadio"
+                          checked={checked}
                           onChange={switchBudgetTab}
                         />
                       </div>
@@ -256,8 +257,52 @@ function Home() {
                             </li>
                           </ul>
                         </div>
+                        <p className="font-raleway text-gray-800 dark:text-gray-300 mb-1 mt-3">
+                          Duration
+                        </p>
 
-                        <button className="mt-24 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 text-gray-100 bg-blueDeep">
+                        <button
+                          id="dropdownDefault"
+                          data-dropdown-toggle="dropdown"
+                          class="font-raleway text-white bg-gray-300 hover:bg-gray-800 focus:outline-none font-medium rounded-lg text-sm px-4 py-3 text-center flex items-center justify-between dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 w-1/2"
+                          type="button"
+                        >
+                          <span>90 Days</span>
+                          <i className="fas fa-chevron-down fa-sm fa-fw ml-7"></i>
+                        </button>
+
+                        <div
+                          id="dropdown"
+                          class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+                        >
+                          <ul
+                            class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownDefault"
+                          >
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Daily
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Weekly
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Monthly
+                              </p>
+                            </li>
+                            <li>
+                              <p class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Quaterly
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <button className="mt-6 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 text-gray-100 bg-blueDeep">
                           Start Now!
                         </button>
                         <div className="py-6 text-center">
@@ -351,6 +396,12 @@ function Home() {
                         <div id="circle" className="mr-2 bg-blueDeep"></div>
                         <div id="circle" className="bg-gray-500"></div>
                       </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="flex items-center justify-center">
+                      <div className="circle bg-blueDeep"></div>
+                      <div className="circle bg-blueDeep"></div>
                     </div>
                   </div>
                 </div>

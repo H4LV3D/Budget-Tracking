@@ -27,10 +27,7 @@ function About() {
                 We at Coin save limited aim to help you make better financial
                 desicions and analysis of the inflow and outflow of cash wwithin
                 your wallet and your financiual life and help you better predict
-                your next spending, savings and tracking expenditure. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat
-                cumque unde hic porro dolores veritatis quos, doloribus soluta
-                nisi ea unde hic porro dolores veritatis.
+                your next spending, savings and tracking expenditure.
               </p>
               <div className="flex flex-col md:flex-row w-full">
                 <button className="bg-blueDeep text-center py-3 px-5 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[260px] hover:scale-75">
@@ -53,7 +50,7 @@ function About() {
           <section className="bg-gray-300 dark:bg-gray-900 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 py-20 flex flex-col">
               <div className="flex items-center mb-4">
-                <hr className="w-1/4  bg-gray-800 dark:bg-white" />
+                <hr className="w-1/6  bg-gray-800 dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 pl-4">
                   Why Save?
                 </p>

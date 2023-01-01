@@ -310,6 +310,10 @@ function Home() {
                           </small>
                         </div>
                       </div>
+                      <div className="pb-3 px-8 flex items-center justify-center mx-auto">
+                        <div id="circle" className="mr-2 bg-blueDeep"></div>
+                        <div id="circle" className="bg-gray-500"></div>
+                      </div>
                     </div>
                     <div className="hidden" id="budget">
                       <h4

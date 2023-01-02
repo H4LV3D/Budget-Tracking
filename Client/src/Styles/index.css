@@ -166,3 +166,6 @@ input[type="radio"] {
   height: 10px !important;
   border-radius: 50% !important;
 }
+select {
+  border-right: 16px solid transparent;
+}

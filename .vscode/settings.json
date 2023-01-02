@@ -1,0 +1,12 @@
+{
+  "keyboard.touchbar.ignored": [
+    "workbench.action.debug.start",
+    "workbench.action.debug.run",
+    "workbench.action.debug.pause",
+    "workbench.action.debug.stepOut",
+    "workbench.action.debug.stepInto",
+    "workbench.action.debug.stepOver",
+    "workbench.action.debug.stop",
+    "workbench.action.debug.restart"
+  ]
+}

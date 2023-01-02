@@ -32,8 +32,8 @@ function Home() {
               </p>
 
               <div className="w-full mt-12 flex items-center justify-start">
-                <button className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 hover:border hover:border-gray-400 dark:hover:border-gray-300 pl-6 pr-24 py-3 mr-5 text-white text-lg rounded-lg mb-3 flex items-center">
-                  <i class="fab fa-app-store fa-2xl fa-fw pr-6"></i>
+                <button className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-800 hover:border hover:border-blueDeep dark:hover:border-gray-300 pl-6 pr-24 py-3 mr-5 text-white text-lg rounded-lg mb-3 flex items-center">
+                  <i class="fab fa-app-store fa-2xl fa-fw pr-6 text-black dark:text-white hover:text-blueDeep"></i>
                   <div className="flex flex-col items-start justify-start pl-3">
                     <h6 className="font-raleway font-medium text-base text-gray-800 dark:text-gray-400">
                       Available on
@@ -43,8 +43,8 @@ function Home() {
                     </h5>
                   </div>
                 </button>
-                <button className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 hover:border hover:border-gray-400 dark:hover:border-gray-300 pl-6 pr-24 py-3 mr-3 text-white text-lg rounded-lg mb-3 flex items-center">
-                  <i class="fab fa-google-play fa-2xl fa-fw pr-6"></i>
+                <button className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-800 hover:border hover:border-blueDeep dark:hover:border-gray-300 pl-6 pr-24 py-3 mr-3 text-white text-lg rounded-lg mb-3 flex items-center">
+                  <i class="fab fa-google-play fa-2xl fa-fw pr-6 text-black dark:text-white hover:text-blueDeep"></i>
                   <div className="flex flex-col items-start justify-start pl-3">
                     <h6 className="font-raleway font-medium text-base text-gray-800 dark:text-gray-400">
                       Get it on
@@ -67,6 +67,25 @@ function Home() {
                 />
               </div>
             </div>
+          </section>
+        </div>
+      </div>
+      <div className="h-80 w-full">
+        <div
+          className={`flex items-center justify-center flex-col ${
+            darkToggle && "dark"
+          }`}
+        >
+          <section className="w-full min-h-screen flex items-center sm:my-0">
+            <div className="md:w-1/2 sm:px-12 md:px-0 lg:pl-24 xl:pl-36 md:min-h-screen flex flex-col justify-center bg-gray-300 dark:bg-gray-800">
+              <div className="flex flex-row">
+                <i class="fab fa-microsoft fa-lg fa-fw"></i>
+                <i class="fab fa-spotify fa-3x fa-fw px-6"></i>
+                <i class="fab fa-Microsoft fa-3x fa-fw px-6"></i>
+                <i class="fab fa-pinterest fa-3x fa-fw px-6"></i>
+              </div>
+            </div>
+            <div className="md:w-1/2 md:min-h-screen flex items-center justify-center bg-gray-200 dark:bg-gray-700"></div>
           </section>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 // import { Link } from "react-router-dom";
-// import money from "../Assets/images/criterium-euros-1.svg";
+// import { ReactComponent as MoneySvg } from "../Assets/images/criterium-euros-1.svg";
 import person from "../Assets/images/picture2.jpg";
 
 function Home() {
@@ -70,25 +70,45 @@ function Home() {
           </section>
         </div>
       </div>
-      <div className="h-80 w-full">
+      {/* <div className="min-h-screen w-full">
         <div
           className={`flex items-center justify-center flex-col ${
             darkToggle && "dark"
           }`}
         >
-          <section className="w-full min-h-screen flex items-center sm:my-0">
-            <div className="md:w-1/2 sm:px-12 md:px-0 lg:pl-24 xl:pl-36 md:min-h-screen flex flex-col justify-center bg-gray-300 dark:bg-gray-800">
-              <div className="flex flex-row">
-                <i class="fab fa-microsoft fa-lg fa-fw"></i>
-                <i class="fab fa-spotify fa-3x fa-fw px-6"></i>
-                <i class="fab fa-Microsoft fa-3x fa-fw px-6"></i>
-                <i class="fab fa-pinterest fa-3x fa-fw px-6"></i>
-              </div>
+          <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
+            <div className="flex items-center justify-center">
+              <hr className="hidden sm:block w-1/4 bg-gray-800 dark:bg-white" />
+              <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 sm:pl-4">
+                Expense Tracking
+              </p>
             </div>
-            <div className="md:w-1/2 md:min-h-screen flex items-center justify-center bg-gray-200 dark:bg-gray-700"></div>
           </section>
         </div>
-      </div>
+      </div> */}
+      {/* <div className="h-80 w-full">
+        <div
+          className={`flex items-center justify-center flex-col ${
+            darkToggle && "dark"
+          }`}
+        >
+          <section className="bg-gray-300 dark:bg-gray-800 w-full h-80 flex items-center sm:my-0">
+            <div className="md:w-1/2 h-80 sm:px-12 md:px-0 lg:pl-24 xl:pl-36 flex flex-col justify-center bg-gray-300 dark:bg-gray-800">
+              <p className="font-raleway font-medium text-xl text-blueDeep text-center py-10 ">
+                They trust Us
+              </p>
+              <div className="flex flex-row justify-between px-auto mr-20">
+                <i class="fab fa-spotify fa-4x fa-fw px-12 text-gray-400"></i>
+                <i class="fab fa-microsoft fa-4x fa-fw px-12 text-gray-400"></i>
+                <i class="fab fa-pinterest fa-4x fa-fw px-12 text-gray-400"></i>
+                <i class="fab fa-apple fa-4x fa-fw px-12 text-gray-400"></i>
+                <i class="fab fa-google fa-4x fa-fw px-12 text-gray-400"></i>
+              </div>
+            </div>
+            <div className="md:w-1/2 h-80 flex items-center justify-center bg-gray-200 dark:bg-gray-700"></div>
+          </section>
+        </div>
+      </div> */}
       <div className="min-h-screen w-full">
         <div
           className={`flex items-center justify-center flex-col ${
@@ -96,28 +116,31 @@ function Home() {
           }`}
         >
           <section className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center py-24 sm:py-0">
-            <div className="md:w-1/2 md:min-h-screen"></div>
-            <div className="md:w-1/2 px-6 sm:px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
-              <div className="flex items-center mb-4">
-                <hr className="hidden sm:block w-1/4 bg-gray-800 dark:bg-white" />
-                <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 sm:pl-4">
-                  Expense Tracking
-                </p>
-              </div>
+            <div className="md:w-1/2 sm:px-12 md:px-0 lg:pl-24 xl:pl-36 md:min-h-screen flex flex-col justify-center">
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-black text-blueDeep dark:text-white mb-12">
-                Tracking at <br className="hidden md:block" /> your tips.
+                More Money in <br />
+                <span className="text-blueDeep">your pocket.</span>
               </h2>
-              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-2/3 leading-7">
+              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full lg:pr-16 leading-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
                 soluta nisi ea unde hic porro dolores veritatis. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Optio quaerat
-                cumque unde hic porro dolores veritatis quos.
+                dolor sit.
               </p>
-              <button className="border border-blueDeep text-blueDeep dark:bg-blueDeep dark:text-gray-200  text-center py-3 ps-6 sm:px-10 mr-3 text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
-                Find the Money Trail!
-              </button>
+              <div className="flex items-center mt-16 pr-16">
+                <input
+                  type="text"
+                  name="email"
+                  id=""
+                  className="bg-gray-400 dark:bg-gray-800 py-4 px-8 rounded-l-md text-lg text-gray-800 dark:text-gray-300 w-full h-[60px]"
+                  autoFocus
+                />
+                <button className="border border-blueDeep text-blueDeep dark:bg-blueDeep dark:text-gray-200 text-center py-4 sm:px-10 text-lg rounded-r-md h-[60px]">
+                  Subscibe
+                </button>
+              </div>
             </div>
+            <div className="md:w-1/2 md:min-h-screen">{/* <MoneySvg /> */}</div>
           </section>
         </div>
       </div>

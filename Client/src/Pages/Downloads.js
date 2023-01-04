@@ -187,10 +187,10 @@ function Home() {
                   type="text"
                   name="email"
                   id=""
-                  className="bg-gray-300 dark:bg-gray-800 py-4 px-8 rounded-l-md text-lg text-gray-800 dark:text-gray-300 w-full h-[60px] autofill:!bg-inherit"
+                  className="bg-gray-300 dark:bg-gray-800 py-4 px-8 rounded-l-md text-lg text-gray-800 dark:text-gray-300 w-full h-[60px] font-raleway font-medium"
                   autoFocus
                 />
-                <button className="border border-blueDeep text-white bg-blueDeep dark:bg-blueDeep dark:text-gray-200 text-center py-4 sm:px-10 text-lg rounded-r-md h-[60px]">
+                <button className="border border-blueDeep font-raleway font-medium text-white bg-blueDeep dark:bg-blueDeep dark:text-gray-200 text-center py-4 sm:px-10 text-lg rounded-r-md h-[60px]">
                   Subscribe
                 </button>
               </div>

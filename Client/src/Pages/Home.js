@@ -141,7 +141,7 @@ function Home() {
                 soluta nisi ea unde hic porro dolores veritatis.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
-                <div className="col-12 md:w-[450px] md:h-[600px] rounded-2xl shadow-2xl bg-gray-300 border border-gray-500 dark:bg-gray-800 text-gray-800 dark:text-gray-400 mb-4">
+                <div className="col-12 md:w-[450px] md:h-[600px] rounded-2xl shadow-2xl bg-gray-300 border border-gray-400 dark:bg-gray-800 text-gray-800 dark:text-gray-400 mb-4">
                   <div className="row flex">
                     <div
                       className="col-6 w-1/2 flex flex-row items-center justify-between p-4 rounded-tl-2xl bg-gray-200 dark:bg-gray-700"
@@ -216,7 +216,7 @@ function Home() {
                         <p className="font-raleway text-gray-800 dark:text-gray-400 mb-1">
                           Frequency
                         </p>
-                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700  font-raleway text-gray-800 dark:text-gray-400 bg-gray-400 dark:hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep">
+                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700  font-raleway text-gray-800 dark:text-gray-400 bg-gray-200 dark:hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep">
                           <option value="Daily" selected>
                             Daily
                           </option>
@@ -230,7 +230,7 @@ function Home() {
                         <p className="font-raleway text-gray-800 dark:text-gray-400 mb-1 mt-3">
                           Duration
                         </p>
-                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700  font-raleway text-gray-800 dark:text-gray-400 bg-gray-400 dark:hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep">
+                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700  font-raleway text-gray-800 dark:text-gray-400 bg-gray-200 dark:hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep">
                           <option value="30" selected>
                             30 Days
                           </option>
@@ -315,7 +315,7 @@ function Home() {
                           Frequency
                         </p>
 
-                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700 dark:text-gray-400 font-raleway text-white bg-gray-300 hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 border-r-8">
+                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700 dark:text-gray-400 font-raleway text-gray-800 bg-gray-200 hover:bg-gray-400 focus:outline-none font-medium dark:bg-gray-700 dark:hover:bg-gray-800 dark:hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep dark:focus:bg-gray-800 border-r-8">
                           <option value="Daily" selected>
                             Daily
                           </option>
@@ -505,7 +505,7 @@ function Home() {
           <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex justify-center mx-auto py-24 sm:py-0">
             <div className="container mx-auto md:px-12 my-auto">
               <div className="flex items-center mb-12">
-                <hr className="hidden sm:block w-1/5  bg-gray-800 dark:bg-blueDeep" />
+                <hr className="hidden sm:block w-1/5 bg-blueDeep dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-2xl md:text-3xl text-blueDeep dark:text-gray-200 pl-4">
                   What People have to say
                 </p>

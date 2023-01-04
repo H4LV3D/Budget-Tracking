@@ -127,9 +127,9 @@ function Home() {
             darkToggle && "dark"
           }`}
         >
-          <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center py-24 sm:py-0">
-            <div className="container mx-auto px-6 sm:px-12 py-20 flex flex-col items-center justify-center pt-12 sm:pt-24 lg:mt-48">
-              <h2 className="text-6xl sm:text-8xl md:text-8xl lg:text-9xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
+          <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center pt-48 pb-24 lg:pt-0">
+            <div className="container mx-auto px-6 sm:px-8 py-20 flex flex-col items-center justify-center pt-12 sm:pt-24 lg:mt-48">
+              <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-center font-sans font-black text-blueDeep dark:text-white mb-8">
                 Follow <br /> <span className="text-blueDeep">The</span> Money!
               </h2>
               <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200">
@@ -472,7 +472,7 @@ function Home() {
         >
           <section className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center py-24 sm:py-0">
             <div className="md:w-1/2 md:min-h-screen"></div>
-            <div className="md:w-1/2 px-6 sm:px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
+            <div className="md:w-1/2 px-8 sm:px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
               <div className="flex items-center mb-4">
                 <hr className="hidden sm:block w-1/4 bg-gray-800 dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 sm:pl-4">

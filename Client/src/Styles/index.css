@@ -101,16 +101,14 @@ input:checked + .slideBtnTg:before {
   -webkit-overflow-scrolling: touch;
 }
 
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 0px #ffffff3c inset !important;
-}
+  -webkit-text-fill-color: #5992c7 !important;
+} */
 
-input:-webkit-autofill {
-  -webkit-text-fill-color: rgb(34, 30, 30) !important;
-}
 input:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -129,11 +127,10 @@ hr {
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 0px #5992c7 inset !important;
-    background-color: #ffffff3c;
-  }
-
-  input:-webkit-autofill {
+    box-shadow: 0 0 0 0px #5992c7 inset !important;
+    background-color: #374251 !important;
     -webkit-text-fill-color: #5992c7 !important;
+    -webkit-background-clip: inherit !important;
   }
 
   input:focus,

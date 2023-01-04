@@ -1,12 +1,64 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 // import { Link } from "react-router-dom";
-// import { ReactComponent as MoneySvg } from "../Assets/images/criterium-euros-1.svg";
+import { ReactComponent as MoneySvg } from "../Assets/images/criterium-euros-1.svg";
 import person from "../Assets/images/picture2.jpg";
 
 function Home() {
   const darkToggle = false;
+
+  useEffect(() => {
+    var _CONTENT = ["Pocket", "Wallet", "Account"];
+
+    var _PART = 0;
+
+    var _PART_INDEX = 0;
+
+    var _INTERVAL_VAL;
+
+    var _ELEMENT = document.querySelector("#text");
+
+    var _CURSOR = document.querySelector("#cursor");
+
+    function Type() {
+      var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+      _ELEMENT.innerHTML = text;
+      _PART_INDEX++;
+
+      if (text === _CONTENT[_PART]) {
+        // Hide the cursor
+        _CURSOR.style.display = "none";
+
+        clearInterval(_INTERVAL_VAL);
+        setTimeout(function () {
+          _INTERVAL_VAL = setInterval(Delete, 50);
+        }, 1000);
+      }
+    }
+
+    function Delete() {
+      var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+      _ELEMENT.innerHTML = text;
+      _PART_INDEX--;
+
+      if (text === "") {
+        clearInterval(_INTERVAL_VAL);
+
+        if (_PART === _CONTENT.length - 1) _PART = 0;
+        else _PART++;
+
+        _PART_INDEX = 0;
+
+        setTimeout(function () {
+          _CURSOR.style.display = "inline-block";
+          _INTERVAL_VAL = setInterval(Type, 100);
+        }, 200);
+      }
+    }
+
+    _INTERVAL_VAL = setInterval(Type, 100);
+  }, []);
 
   return (
     <>
@@ -119,7 +171,10 @@ function Home() {
             <div className="md:w-1/2 sm:px-12 md:px-0 lg:pl-24 xl:pl-36 md:min-h-screen flex flex-col justify-center">
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-black text-blueDeep dark:text-white mb-12">
                 More Money in <br />
-                <span className="text-blueDeep">your pocket.</span>
+                <span className="text-blueDeep">
+                  your <span id="text"></span>
+                  <span id="cursor"></span>.
+                </span>
               </h2>
               <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full lg:pr-16 leading-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
@@ -132,15 +187,19 @@ function Home() {
                   type="text"
                   name="email"
                   id=""
-                  className="bg-gray-400 dark:bg-gray-800 py-4 px-8 rounded-l-md text-lg text-gray-800 dark:text-gray-300 w-full h-[60px]"
+                  className="bg-gray-300 dark:bg-gray-800 py-4 px-8 rounded-l-md text-lg text-gray-800 dark:text-gray-300 w-full h-[60px] autofill:!bg-inherit"
                   autoFocus
                 />
-                <button className="border border-blueDeep text-blueDeep dark:bg-blueDeep dark:text-gray-200 text-center py-4 sm:px-10 text-lg rounded-r-md h-[60px]">
-                  Subscibe
+                <button className="border border-blueDeep text-white bg-blueDeep dark:bg-blueDeep dark:text-gray-200 text-center py-4 sm:px-10 text-lg rounded-r-md h-[60px]">
+                  Subscribe
                 </button>
               </div>
             </div>
-            <div className="md:w-1/2 md:min-h-screen">{/* <MoneySvg /> */}</div>
+            <div className="md:w-1/2 md:min-h-screen">
+              <div className="h-screen pt-20">
+                <MoneySvg />
+              </div>
+            </div>
           </section>
         </div>
       </div>

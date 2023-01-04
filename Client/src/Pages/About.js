@@ -50,7 +50,7 @@ function About() {
           <section className="bg-gray-300 dark:bg-gray-900 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 py-20 flex flex-col">
               <div className="flex items-center mb-4">
-                <hr className="w-1/6  bg-gray-800 dark:bg-white" />
+                <hr className="w-1/6  bg-blueDeep dark:bg-blueDeep" />
                 <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 pl-4">
                   Why Save?
                 </p>
@@ -81,7 +81,7 @@ function About() {
             <div className="md:w-1/2 md:min-h-screen"></div>
             <div className="md:w-1/2 sm:w-2/3 sm:mx-auto px-6 sm:px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
               <div className="flex items-center mb-4">
-                <hr className="hidden sm:block w-1/4 bg-gray-800 dark:bg-white" />
+                <hr className="hidden sm:block w-1/4 bg-blueDeep dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 sm:pl-4">
                   Expense Tracking
                 </p>
@@ -106,7 +106,7 @@ function About() {
       <div className="min-h-screen w-full">
         <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex justify-center items-center">
           <div className="container mx-auto my-auto p-3">
-            <div className="flex flex-col justify-center w-full my-20 mx-auto px-10 py-14 lg:p-16 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl max-w-screen-xl">
+            <div className="flex flex-col justify-center w-full my-20 mx-auto px-10 py-16 lg:py-24 lg:px-16 rounded-xl bg-gray-200 dark:bg-gray-700 shadow-2xl max-w-screen-xl">
               <div className="flex justify-center md:justify-start items-center mb-12">
                 <hr className="hidden md:block w-1/6 bg-blueDeep dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-2xl md:text-3xl text-blueDeep dark:text-gray-200 pl-4">

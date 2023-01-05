@@ -136,9 +136,9 @@ function Home() {
                 Save. Spend. Invest. Repeat.
               </p>
               <p className=" text-gray-800 dark:text-gray-400 font-raleway font-light text-base text-center mx-auto w-full md:w-3/4 xl:w-1/2 my-5 mb-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                quaerat cumque unde hic porro dolores veritatis quos, doloribus
-                soluta nisi ea unde hic porro dolores veritatis.
+                Money well spent is what give you a better life experience than
+                everyone else. We at Coinsave are here to ensure you get the
+                best experience of life.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
                 <div className="col-12 md:w-[450px] md:h-[600px] rounded-2xl shadow-2xl bg-gray-300 border border-gray-400 dark:bg-gray-800 text-gray-800 dark:text-gray-400 mb-4">
@@ -281,7 +281,7 @@ function Home() {
                           </div>
                         </div>
 
-                        <button className="mt-6 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 text-gray-100 bg-blueDeep">
+                        <button className="mt-6 rounded-lg w-full bg-blue font-raleway font-medium text-lg py-4 text-gray-100 bg-blueDeep hover:animate-bounce">
                           Start Now!
                         </button>
                       </div>
@@ -340,9 +340,9 @@ function Home() {
               </div>
               <div className="py-6 w-full md:w-1/4 text-center mb-8">
                 <small className="font-raleway font-light text-gray-400 text-center">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et,
-                  vel. Culpa fugit blanditiis nisi fuga non atque provident
-                  similique consequatur quo.
+                  Please note that there could be various factors that could
+                  affect the actualization of this budget calculator to be
+                  amassed at the end of the duration.
                 </small>
               </div>
             </div>

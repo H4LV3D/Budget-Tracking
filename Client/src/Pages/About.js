@@ -96,7 +96,7 @@ function About() {
                 dolor sit amet consectetur adipisicing elit. Optio quaerat
                 cumque unde hic porro dolores veritatis quos.
               </p>
-              <button className="border border-blueDeep text-blueDeep dark:bg-blueDeep dark:text-gray-200  text-center py-3 ps-6 sm:px-10 mr-3 text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
+              <button className="font-raleway font-normal text-lg text-blueDeep border border-blueDeep dark:bg-blueDeep hover:bg-blueDeep hover:text-white hover:font-bold transition-0.2s dark:text-gray-200  text-center py-3 ps-6 sm:px-10 mr-3 rounded-md mb-3 w-full md:w-[400px] mt-12">
                 Save Now!
               </button>
             </div>

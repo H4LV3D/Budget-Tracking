@@ -356,6 +356,27 @@ function Home() {
           }`}
         >
           <section
+            className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center justify-center"
+            id="container"
+          >
+            <div className="container flex items-center justify-center">
+              <div className="">
+                <h1>The Video</h1>
+                <div className="h-[450px] w-[600px] border border-blueDeep">
+                  <video src="../Assets/images/PIG.mp4" autoPlay></video>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div className="min-h-screen w-full ">
+        <div
+          className={`flex items-center justify-center flex-col ${
+            darkToggle && "dark"
+          }`}
+        >
+          <section
             className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center overflow-x-auto over container-snap scrolling-wrapper py-24 md:py-0"
             id="container"
             ref={scrollRef}

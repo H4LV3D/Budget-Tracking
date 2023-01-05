@@ -75,9 +75,9 @@ function Home() {
           <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
             <div className="lg:w-1/2 px-8 sm:px-12 md:px-24 lg:pl-24 xl:pl-36 md:min-h-screen flex flex-col justify-center">
               <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-7xl font-raleway font-bold text-blueDeep dark:text-white mb-8">
-                Do more with Our mobile App
+                Do more with Our mobile App.
               </h2>
-              <p className="text-gray-800 dark:text-gray-300 font-raleway font-light text-base w-full md:w-3/4  leading-7">
+              <p className="text-gray-800 dark:text-gray-300 font-raleway font-light text-base w-full  leading-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
                 soluta nisi ea unde hic porro dolores veritatis soluta nisi ea

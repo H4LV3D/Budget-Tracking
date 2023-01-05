@@ -216,7 +216,7 @@ function Home() {
                         <p className="font-raleway text-gray-800 dark:text-gray-400 mb-1">
                           Frequency
                         </p>
-                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700  font-raleway text-gray-800 dark:text-gray-400 bg-gray-200 dark:hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep">
+                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700  font-raleway text-gray-800 dark:text-gray-300 bg-gray-200 dark:hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep">
                           <option value="Daily" selected>
                             Daily
                           </option>
@@ -230,7 +230,7 @@ function Home() {
                         <p className="font-raleway text-gray-800 dark:text-gray-400 mb-1 mt-3">
                           Duration
                         </p>
-                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700  font-raleway text-gray-800 dark:text-gray-400 bg-gray-200 dark:hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep">
+                        <select className="py-3 px-4 pr-9 block w-full rounded-lg text-sm dark:border-gray-700  font-raleway text-gray-800 dark:text-gray-300 bg-gray-200 dark:hover:bg-gray-800 focus:outline-none font-medium dark:bg-gray-700 hover:border dark:hover:border-gray-700 dark:focus:border dark:focus:border-blueDeep">
                           <option value="30" selected>
                             30 Days
                           </option>
@@ -349,7 +349,7 @@ function Home() {
           </section>
         </div>
       </div>
-      <div className="min-h-screen w-full ">
+      {/* <div className="min-h-screen w-full ">
         <div
           className={`flex items-center justify-center flex-col ${
             darkToggle && "dark"
@@ -369,7 +369,7 @@ function Home() {
             </div>
           </section>
         </div>
-      </div>
+      </div> */}
       <div className="min-h-screen w-full ">
         <div
           className={`flex items-center justify-center flex-col ${
@@ -383,7 +383,7 @@ function Home() {
           >
             <div className="flex flex-row px-12 ">
               <div className="pl-10 pr-24">
-                <h1 className="font-sans font-black text-black dark:text-white text-[160px] lg:text-[160px] xl:text-[190px]">
+                <h1 className="font-sans font-black text-blueDeep text-[160px] lg:text-[160px] xl:text-[190px]">
                   WHY <br /> <span className="text-blueDeep">BUDGET?</span>
                 </h1>
               </div>
@@ -495,7 +495,7 @@ function Home() {
             <div className="md:w-1/2 md:min-h-screen"></div>
             <div className="md:w-1/2 px-8 sm:px-12 md:px-0 md:min-h-screen flex flex-col justify-center">
               <div className="flex items-center mb-4">
-                <hr className="hidden sm:block w-1/4 bg-gray-800 dark:bg-white" />
+                <hr className="hidden sm:block w-1/4 bg-blueDeep dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-xl text-blueDeep dark:text-gray-200 sm:pl-4">
                   Expense Tracking
                 </p>

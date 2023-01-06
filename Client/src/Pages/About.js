@@ -110,7 +110,7 @@ function About() {
               <div className="flex justify-center md:justify-start items-center mb-12">
                 <hr className="hidden md:block w-1/6 bg-blueDeep dark:bg-white" />
                 <p className="font-raleway text-center font-medium text-2xl md:text-3xl text-blueDeep dark:text-gray-200 pl-4">
-                  What Save with us?
+                  Why Save with us?
                 </p>
               </div>
               <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">

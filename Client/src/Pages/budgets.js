@@ -93,8 +93,9 @@ function About() {
           <section className="bg-gray-200 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 py-24 flex flex-col items-center justify-center">
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-black text-blueDeep dark:text-white mb-8">
-                What is a Budget?
+                CTA
               </h2>
+              <p>no. of people using the budget scheme</p>
             </div>
           </section>
         </div>

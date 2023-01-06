@@ -18,11 +18,12 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/budgets" element={<Budget />} />
+            <Route path="/tracking" element={<Budget />} />
+            <Route path="/download" element={<Downloads />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/budgets" element={<Budget />} />
-            <Route path="/download" element={<Downloads />} />
           </Routes>
         </Router>
       </ThemeProvider>

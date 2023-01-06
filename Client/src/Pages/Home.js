@@ -466,7 +466,8 @@ function Home() {
           <section className="bg-gray-300 dark:bg-gray-800 w-full min-h-screen flex items-center  sm:my-0">
             <div className="container mx-auto px-6 sm:px-12 py-20 flex flex-col">
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-sans font-light text-blueDeep dark:text-white mb-8">
-                Spend Less, <br />
+                <span className="font-raleway">Spend less,</span>
+                <br />
                 <span className="font-black text-blueDeep text-6xl sm:text-7xl md:text-6xl lg:text-9xl">
                   Save More.
                 </span>
@@ -478,7 +479,7 @@ function Home() {
                 unde hic porro dolores veritatis.
               </p>
 
-              <button className="bg-blueDeep text-center py-3 ps-6 sm:px-10 mr-3 text-white text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
+              <button className="font-raleway font-medium text-lg text-center bg-blueDeep py-3 ps-6 sm:px-10 mr-3 text-white rounded-lg mb-3 w-full md:w-[400px] mt-12 hover:animate-pulse">
                 Start Saving!
               </button>
             </div>
@@ -510,8 +511,8 @@ function Home() {
                 dolor sit amet consectetur adipisicing elit. Optio quaerat
                 cumque unde hic porro dolores veritatis quos.
               </p>
-              <button className="border border-blueDeep text-blueDeep dark:bg-blueDeep dark:text-gray-200  text-center py-3 ps-6 sm:px-10 mr-3 text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
-                Find the Money Trail!
+              <button className="font-raleway font-medium border border-blueDeep text-blueDeep dark:bg-blueDeep dark:text-gray-200  text-center py-3 ps-6 sm:px-10 mr-3 text-lg rounded-lg mb-3 w-full md:w-[400px] mt-12">
+                See Expenditure!
               </button>
             </div>
           </section>

@@ -136,9 +136,9 @@ function Home() {
                 Save. Spend. Invest. Repeat.
               </p>
               <p className=" text-gray-800 dark:text-gray-400 font-raleway font-light text-base text-center mx-auto w-full md:w-3/4 xl:w-1/2 my-5 mb-10">
-                Money well spent is what give you a better life experience than
-                everyone else. We at Coinsave are here to ensure you get the
-                best experience of life.
+                The quality of an expenditure is not in how much but in how well
+                it was spent. At Coinsave, we ensure you get quality of every
+                coin you spend on every expense.
               </p>
               <div className="flex flex-col md:flex-row w-full justify-center">
                 <div className="col-12 md:w-[450px] md:h-[600px] rounded-2xl shadow-2xl bg-gray-300 border border-gray-400 dark:bg-gray-800 text-gray-800 dark:text-gray-400 mb-4">

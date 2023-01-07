@@ -4,6 +4,7 @@ import picture1 from "../Assets/images/picture1.jpg";
 import picture2 from "../Assets/images/picture2.jpg";
 import Footer from "../Components/Footer";
 // import { Link } from "react-router-dom";
+import video from "../Assets/images/PIG.mp4";
 
 function Home() {
   const darkToggle = false;
@@ -349,27 +350,6 @@ function Home() {
           </section>
         </div>
       </div>
-      {/* <div className="min-h-screen w-full ">
-        <div
-          className={`flex items-center justify-center flex-col ${
-            darkToggle && "dark"
-          }`}
-        >
-          <section
-            className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center justify-center"
-            id="container"
-          >
-            <div className="container flex items-center justify-center">
-              <div className="">
-                <h1>The Video</h1>
-                <div className="h-[450px] w-[600px] border border-blueDeep">
-                  <video src="../Assets/images/PIG.mp4" autoPlay></video>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div> */}
       <div className="min-h-screen w-full ">
         <div
           className={`flex items-center justify-center flex-col ${
@@ -482,6 +462,29 @@ function Home() {
               <button className="font-raleway font-medium text-lg text-center bg-blueDeep py-3 ps-6 sm:px-10 mr-3 text-white rounded-lg mb-3 w-full md:w-[400px] mt-12 hover:animate-pulse">
                 Start Saving!
               </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div className="min-h-screen w-full ">
+        <div
+          className={`flex items-center justify-center flex-col ${
+            darkToggle && "dark"
+          }`}
+        >
+          <section
+            className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center justify-center"
+            id="container"
+          >
+            <div className="flex items-center justify-center">
+              <div className="">
+                <div className="rounded-xl">
+                  <video autoPlay loop className="">
+                    <source src={video} type="video/mp4" />
+                    Sorry, your browser does not support videos
+                  </video>
+                </div>
+              </div>
             </div>
           </section>
         </div>

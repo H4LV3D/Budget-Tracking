@@ -6,7 +6,7 @@ import About from "./Pages/About";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Dashboard from "./Pages/Dashboard";
-// import Budget from "./Pages/Budgets";
+import Budget from "./Pages/Budgets";
 import Downloads from "./Pages/Downloads";
 import { ThemeProvider } from "./Components/themeContext";
 
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/budgets" element={<Budget />} /> */}
+            <Route path="/budgets" element={<Budget />} />
             <Route path="/download" element={<Downloads />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

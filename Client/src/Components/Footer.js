@@ -5,11 +5,11 @@ function Footer() {
   return (
     <>
       <footer className="w-full">
-        <section className="bg-gray-200 dark:bg-gray-700 w-full flex items-center sm:my-0">
+        <section className="bg-gray-200 dark:bg-gray-900 w-full flex items-center sm:my-0">
           <div className="container sm:mx-auto px-6 sm:px-12 my-20 flex flex-col justify-center">
             <div className="mt-10 mb-2">
               <div className="flex flex-row">
-                <div className="w-full md:w-3/4 lg:w-1/4 lg:my-auto">
+                <div className="w-full md:w-3/4 lg:w-1/4 my-auto">
                   <Link to="/">
                     <h2 className="font-sans text-3xl text-blueDeep font-bold mb-3">
                       <i className="fab fa-bitcoin fa-1x fa-fw"></i>
@@ -19,6 +19,11 @@ function Footer() {
                       </span>
                     </h2>
                   </Link>
+
+                  <p className="flex items-center text-md font-raleway font-medium text-black dark:text-gray-400 my-6 pr-8">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Incidunt molestias ratione ad soluta, voluptatum assumenda.
+                  </p>
 
                   <p className="flex items-center text-md font-raleway font-medium text-black dark:text-gray-400">
                     <i className="fas fa-copyright fa-md fa-fw dark:text-gray-300"></i>

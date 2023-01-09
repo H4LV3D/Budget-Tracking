@@ -171,7 +171,7 @@ function Home() {
           <section className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center py-24 sm:py-0">
             <div className="lg:w-1/2 px-8 sm:px-12 md:px-24 lg:px-0 lg:pl-24 xl:pl-36 md:min-h-screen flex flex-col justify-center">
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-black text-blueDeep dark:text-white mb-12">
-                More Money in{" "}
+                More Money in <br className=" lg:hidden" />
                 <span className="text-blueDeep">
                   your <span id="text"></span>
                   <span
@@ -181,26 +181,26 @@ function Home() {
                   .
                 </span>
               </h2>
-              <p className="text-grat-800 dark:text-gray-300 font-raleway font-light text-base w-full lg:pr-16 leading-7">
+              <p className="text-gray-800 dark:text-gray-300 font-raleway font-light text-base w-full lg:pr-16 leading-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 quaerat cumque unde hic porro dolores veritatis quos, doloribus
                 soluta nisi ea unde hic porro dolores veritatis. Lorem ipsum
                 dolor sit.
               </p>
-              <div className="w-full md:flex items-center mt-16 md:pr-16">
+              <div className="w-full sm:flex items-center mt-10 md:mt-16 lg:pr-16">
                 <input
                   type="text"
                   name="email"
                   id=""
-                  className="bg-gray-300 dark:bg-gray-800 py-4 px-8 rounded-md md:rounded-none md:rounded-l-md text-lg text-gray-800 dark:text-gray-300 w-full h-[60px] font-raleway font-medium"
+                  className="bg-gray-300 dark:bg-gray-800 py-4 px-8 rounded-md sm:rounded-none sm:rounded-l-md text-lg text-gray-800 dark:text-gray-300 w-full h-[60px] font-raleway font-medium"
                   autoFocus
                 />
-                <button className="border border-blueDeep font-raleway font-medium text-white bg-blueDeep dark:bg-blueDeep dark:text-gray-200 text-center py-4 sm:px-10 text-lg rounded-md md:rounded-none px-12 mx-auto mt-3 md:mt-0 md:rounded-r-md h-[60px]">
+                <button className="border border-blueDeep font-raleway font-medium text-white bg-blueDeep dark:bg-blueDeep dark:text-gray-200 text-center py-4 sm:px-10 text-lg rounded-md sm:rounded-none px-12 mx-auto mt-3 sm:mt-0 sm:rounded-r-md h-[60px]">
                   Subscribe
                 </button>
               </div>
             </div>
-            <div className="w-full hidden md:block lg:w-1/2 md:min-h-screen">
+            <div className="w-full hidden lg:block lg:w-1/2 md:min-h-screen">
               <div className="h-screen lg:pt-20">
                 <MoneySvg />
               </div>

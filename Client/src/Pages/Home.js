@@ -115,7 +115,6 @@ function Home() {
 
     setChecked(!checked);
   }
-  // switchBudgetTab();
 
   return (
     <>
@@ -476,15 +475,11 @@ function Home() {
             className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center justify-center"
             id="container"
           >
-            <div className="flex items-center justify-center">
-              <div className="">
-                <div className="rounded-xl">
-                  <video autoPlay loop className="">
-                    <source src={video} type="video/mp4" />
-                    Sorry, your browser does not support videos
-                  </video>
-                </div>
-              </div>
+            <div className="w-[900px] h-[380px] rounded-xl">
+              <video autoPlay loop className="rounded-xl">
+                <source src={video} type="video/mp4" className="rounded-xl" />
+                Sorry, your browser does not support videos
+              </video>
             </div>
           </section>
         </div>

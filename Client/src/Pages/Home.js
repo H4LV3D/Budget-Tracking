@@ -472,14 +472,27 @@ function Home() {
           }`}
         >
           <section
-            className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex items-center justify-center"
+            className="bg-gray-200 dark:bg-gray-700 w-full min-h-screen flex justify-center"
             id="container"
           >
-            <div className="w-[900px] h-[380px] rounded-xl">
-              <video autoPlay loop className="rounded-xl">
+            <div className="flex flex-col justify-center py-36">
+              <video autoPlay loop className="w-[750px] mx-auto rounded-xl">
                 <source src={video} type="video/mp4" className="rounded-xl" />
                 Sorry, your browser does not support videos
               </video>
+
+              <h3 className="text-4xl text-blueDeep font-raleway font-semibold text-center pt-8">
+                How to save money
+              </h3>
+              <p className="font-raleway font-medium text-gray-800 dark:text-gray-300 text-base w-full sm:3/4 md:w-2/4 lg:w-2/5 pt-4 pb-6 text-center mx-auto leading-7">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                est eius, delectus veritatis quas magni aperiam quis vitae
+                eligendi dolore ipsam id, dicta voluptate esse porro
+                repudiandae. Officia, cumque. Commodi.
+              </p>
+              <button className="border border-blueDeep hover:bg-blueDeep hover:text-white text-lg text-blueDeep font-raleway font-medium py-4 px-20 rounded-lg mx-auto mt-4">
+                View more
+              </button>
             </div>
           </section>
         </div>

@@ -6,7 +6,7 @@ import About from "./Pages/About";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Dashboard from "./Pages/Dashboard";
-import Budget from "./Pages/Budgets";
+import Budget from "./Pages/Expense";
 import Downloads from "./Pages/Downloads";
 import { ThemeProvider } from "./Components/themeContext";
 

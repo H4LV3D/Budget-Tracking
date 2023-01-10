@@ -57,7 +57,7 @@ function Login() {
                   <a href="/">Forgot your password?</a>
                 </div>
 
-                <button className=" bg-blueDeep shadow-2xl text-white rounded-lg py-3 md:py-2 hover:scale-105 duration-300">
+                <button className=" bg-blueDeep shadow-2xl text-white rounded-md py-3 md:py-2 hover:scale-105 duration-300">
                   Login
                 </button>
               </form>
